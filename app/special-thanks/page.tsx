@@ -1,0 +1,73 @@
+const sponsors = [
+  { tier: "Gold Sponsors", names: ["Sponsor Name A", "Sponsor Name B"] },
+  { tier: "Silver Sponsors", names: ["Sponsor Name C", "Sponsor Name D", "Sponsor Name E"] },
+  { tier: "Community Partners", names: ["Partner Organization F", "Partner Organization G"] },
+]
+
+const volunteers = [
+  "Volunteer Name 1",
+  "Volunteer Name 2",
+  "Volunteer Name 3",
+  "Volunteer Name 4",
+  "Volunteer Name 5",
+  "Volunteer Name 6",
+]
+
+export default function SpecialThanksPage() {
+  return (
+    <div className="flex min-h-svh flex-col items-center px-6 py-12">
+      <div className="w-full max-w-2xl">
+        <h1 className="mb-2 text-3xl font-bold tracking-tight">Special Thanks</h1>
+        <p className="mb-10 text-sm leading-relaxed text-muted-foreground">
+          This festival would not be possible without the generous support of our sponsors,
+          partners, and dedicated volunteers. We extend our heartfelt gratitude to everyone
+          who made this celebration possible.
+        </p>
+
+        <div className="flex flex-col gap-10">
+          {sponsors.map(({ tier, names }) => (
+            <section key={tier}>
+              <h2 className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                {tier}
+              </h2>
+              <ul className="flex flex-col gap-2">
+                {names.map((name) => (
+                  <li key={name} className="rounded-md border px-4 py-3 text-sm font-medium">
+                    {name}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+
+          <section>
+            <h2 className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              Volunteers
+            </h2>
+            <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+              {volunteers.map((name) => (
+                <li
+                  key={name}
+                  className="rounded-md border px-3 py-2 text-center text-sm text-muted-foreground"
+                >
+                  {name}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              A Note of Gratitude
+            </h2>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              We also thank the City of Montreal, the Vietnamese community organizations, and
+              every attendee who joins us in celebrating Vietnamese culture and heritage. Your
+              presence makes this festival a success year after year.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  )
+}
