@@ -3,6 +3,14 @@
 import * as React from "react"
 import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes"
 
+// React 19 warns about <script> tags injected by next-themes for theme detection.
+// This is cosmetic — the script runs correctly server-side. Suppress until fixed upstream.
+const _consoleError = console.error
+console.error = (...args: unknown[]) => {
+  if (typeof args[0] === "string" && args[0].includes("script tag while rendering")) return
+  _consoleError(...args)
+}
+
 function ThemeProvider({
   children,
   ...props
