@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl"
+
 const performers = [
   {
     name: "Đoàn Múa Rồng MTL",
@@ -38,24 +40,22 @@ const performers = [
 ]
 
 const schedule = [
-  { time: "11:00 AM", act: "Đoàn Múa Rồng MTL", stage: "Main Stage" },
-  { time: "12:30 PM", act: "Nhóm Nhạc Dân Tộc", stage: "Cultural Tent" },
-  { time: "1:30 PM", act: "Võ Thuật Vietnam", stage: "Main Stage" },
-  { time: "2:30 PM", act: "Áo Dài Fashion Show", stage: "Main Stage" },
-  { time: "3:30 PM", act: "Múa Quạt", stage: "Cultural Tent" },
-  { time: "5:00 PM", act: "DJ Sài Gòn Nights", stage: "Main Stage" },
+  { time: "11:00 AM", act: "Đoàn Múa Rồng MTL", stageKey: "mainStage" as const },
+  { time: "12:30 PM", act: "Nhóm Nhạc Dân Tộc", stageKey: "culturalTent" as const },
+  { time: "1:30 PM", act: "Võ Thuật Vietnam", stageKey: "mainStage" as const },
+  { time: "2:30 PM", act: "Áo Dài Fashion Show", stageKey: "mainStage" as const },
+  { time: "3:30 PM", act: "Múa Quạt", stageKey: "culturalTent" as const },
+  { time: "5:00 PM", act: "DJ Sài Gòn Nights", stageKey: "mainStage" as const },
 ]
 
 export default function PerformersPage() {
+  const t = useTranslations("performers")
+
   return (
     <div className="flex min-h-svh flex-col items-center px-6 py-12">
       <div className="w-full max-w-3xl">
-        <h1 className="mb-2 text-3xl font-bold tracking-tight">Performers</h1>
-        <p className="mb-10 text-sm leading-relaxed text-muted-foreground">
-          Celebrate the richness of Vietnamese performing arts with live music, dance, martial
-          arts, and more. This year&apos;s lineup showcases both traditional heritage and
-          contemporary Vietnamese culture.
-        </p>
+        <h1 className="mb-2 text-3xl font-bold tracking-tight">{t("title")}</h1>
+        <p className="mb-10 text-sm leading-relaxed text-muted-foreground">{t("subtitle")}</p>
 
         <div className="mb-12 grid gap-4 sm:grid-cols-2">
           {performers.map(({ name, type, description }) => (
@@ -70,13 +70,10 @@ export default function PerformersPage() {
         </div>
 
         <section>
-          <h2 className="mb-4 text-lg font-semibold">Schedule</h2>
-          <p className="mb-6 text-sm text-muted-foreground">
-            Times are approximate and subject to change. Check back closer to the event for
-            the final schedule.
-          </p>
+          <h2 className="mb-4 text-lg font-semibold">{t("schedule")}</h2>
+          <p className="mb-6 text-sm text-muted-foreground">{t("scheduleNote")}</p>
           <div className="flex flex-col divide-y rounded-lg border">
-            {schedule.map(({ time, act, stage }) => (
+            {schedule.map(({ time, act, stageKey }) => (
               <div
                 key={`${time}-${act}`}
                 className="flex items-center justify-between gap-4 px-5 py-4"
@@ -87,7 +84,7 @@ export default function PerformersPage() {
                   </span>
                   <span className="text-sm font-medium">{act}</span>
                 </div>
-                <span className="text-xs text-muted-foreground">{stage}</span>
+                <span className="text-xs text-muted-foreground">{t(stageKey)}</span>
               </div>
             ))}
           </div>

@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "performers": "Nghệ sĩ",
+    "foodVendors": "Quán ăn",
+    "faq": "Hỏi đáp",
+    "specialThanks": "Cảm ơn",
+    "contact": "Liên hệ"
+  },
+  "footer": {
+    "tagline": "Tôn vinh văn hóa, ẩm thực và cộng đồng Việt Nam tại trung tâm Montréal.",
+    "festival": "Lễ hội",
+    "connect": "Kết nối",
+    "contact": "Liên hệ",
+    "specialThanks": "Cảm ơn",
+    "copyright": "Bản quyền được bảo lưu."
+  },
+  "home": {
+    "title": "Dự án sẵn sàng!",
+    "subtitle": "Bây giờ bạn có thể thêm các thành phần và bắt đầu xây dựng.",
+    "buttonNote": "Chúng tôi đã thêm thành phần nút bấm cho bạn.",
+    "darkModeHint": "Nhấn d để chuyển đổi chế độ tối"
+  },
+  "performers": {
+    "title": "Nghệ sĩ",
+    "subtitle": "Tôn vinh sự phong phú của nghệ thuật biểu diễn Việt Nam với âm nhạc sống động, múa, võ thuật và nhiều hơn nữa. Chương trình năm nay giới thiệu cả di sản truyền thống lẫn văn hóa Việt Nam đương đại.",
+    "schedule": "Lịch trình",
+    "scheduleNote": "Giờ giấc chỉ mang tính tham khảo và có thể thay đổi. Hãy kiểm tra lại gần ngày sự kiện để có lịch trình cuối cùng.",
+    "mainStage": "Sân khấu chính",
+    "culturalTent": "Lều văn hóa"
+  },
+  "foodVendors": {
+    "title": "Quán ăn",
+    "subtitle": "Khám phá hương vị đa dạng của ẩm thực Việt Nam tại lễ hội. Từ những món ăn đường phố quen thuộc đến đặc sản vùng miền, các quán ăn của chúng tôi mang tinh hoa Việt Nam đến Montréal.",
+    "becomeVendor": "Bạn muốn trở thành người bán hàng?",
+    "becomeVendorDesc": "Chúng tôi chào đón các quán ăn muốn chia sẻ ẩm thực Việt Nam chính thống với cộng đồng Montréal. Đơn đăng ký mở trước lễ hội vài tháng. Hãy gửi nguyện vọng và đội ngũ của chúng tôi sẽ liên hệ với bạn.",
+    "applyToVend": "Đăng ký tham gia",
+    "readFaq": "Xem câu hỏi thường gặp"
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "subtitle": "Bạn có câu hỏi? Tìm câu trả lời cho các thắc mắc phổ biến bên dưới.",
+    "questions": [
+      {
+        "question": "Lễ hội diễn ra khi nào và ở đâu?",
+        "answer": "Lễ hội Việt Nam tại Montréal diễn ra hàng năm vào mùa hè. Xem trang liên hệ của chúng tôi để biết ngày giờ và địa điểm mới nhất."
+      },
+      {
+        "question": "Có phí vào cửa không?",
+        "answer": "Vé vào cửa chung là miễn phí. Một số sự kiện hoặc chương trình biểu diễn có thể yêu cầu mua vé riêng."
+      },
+      {
+        "question": "Lễ hội có phù hợp cho gia đình không?",
+        "answer": "Hoàn toàn có! Lễ hội chào đón mọi lứa tuổi với các hoạt động, ẩm thực và chương trình biểu diễn phù hợp cho cả gia đình."
+      },
+      {
+        "question": "Tôi có thể tình nguyện tại lễ hội không?",
+        "answer": "Có! Chúng tôi chào đón tình nguyện viên. Hãy liên hệ qua trang liên hệ để biết các cơ hội tình nguyện."
+      },
+      {
+        "question": "Có bãi đỗ xe tại chỗ không?",
+        "answer": "Khả năng đỗ xe tùy thuộc vào địa điểm tổ chức. Chúng tôi khuyến khích sử dụng phương tiện công cộng hoặc bãi đỗ xe gần đó."
+      },
+      {
+        "question": "Có được mang thú cưng không?",
+        "answer": "Vì sự an toàn và thoải mái của tất cả mọi người, thú cưng không được phép vào khu vực lễ hội, trừ các động vật hỗ trợ được chứng nhận."
+      },
+      {
+        "question": "Làm thế nào để trở thành người bán hàng?",
+        "answer": "Các quán ăn quan tâm có thể đăng ký qua trang Quán ăn của chúng tôi. Đơn đăng ký mở trước sự kiện vài tháng."
+      },
+      {
+        "question": "Các gian hàng chấp nhận những phương thức thanh toán nào?",
+        "answer": "Phương thức thanh toán tùy thuộc vào từng quán. Chúng tôi khuyến khích chấp nhận cả tiền mặt lẫn thẻ, nhưng hãy mang theo tiền mặt dự phòng."
+      }
+    ]
+  },
+  "specialThanks": {
+    "title": "Lời cảm ơn",
+    "subtitle": "Lễ hội này sẽ không thể thực hiện được nếu không có sự hỗ trợ hào phóng của các nhà tài trợ, đối tác và tình nguyện viên tận tụy. Chúng tôi gửi lời tri ân chân thành đến tất cả những người đã giúp lễ kỷ niệm này thành hiện thực.",
+    "volunteers": "Tình nguyện viên",
+    "gratitude": "Lời tri ân",
+    "gratitudeText": "Chúng tôi cũng xin cảm ơn Thành phố Montréal, các tổ chức cộng đồng Việt Nam và mọi khán giả đã tham gia cùng chúng tôi tôn vinh văn hóa và di sản Việt Nam. Sự hiện diện của bạn làm cho lễ hội này thành công hết năm này qua năm khác."
+  },
+  "contact": {
+    "title": "Liên hệ chúng tôi",
+    "subtitle": "Bạn có câu hỏi hoặc muốn tham gia? Chúng tôi rất vui được nghe từ bạn.",
+    "generalInquiries": "Thắc mắc chung",
+    "generalDesc": "Cho các câu hỏi chung về lễ hội, vé hoặc chương trình:",
+    "mediaPress": "Báo chí & Truyền thông",
+    "mediaDesc": "Cho thẻ báo chí, bộ tài liệu truyền thông hoặc yêu cầu phỏng vấn:",
+    "vendorSponsorship": "Quán ăn & Tài trợ",
+    "vendorDesc": "Để đăng ký làm quán ăn hoặc thảo luận về cơ hội tài trợ:",
+    "followUs": "Theo dõi chúng tôi",
+    "followDesc": "Cập nhật thông báo và thông tin sự kiện:",
+    "sendMessage": "Gửi tin nhắn cho chúng tôi",
+    "name": "Họ tên",
+    "namePlaceholder": "Tên của bạn",
+    "email": "Email",
+    "subject": "Tiêu đề",
+    "subjectPlaceholder": "Chúng tôi có thể giúp gì?",
+    "message": "Tin nhắn",
+    "messagePlaceholder": "Viết tin nhắn của bạn tại đây...",
+    "submit": "Gửi tin nhắn"
+  }
+}

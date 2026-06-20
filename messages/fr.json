@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "performers": "Artistes",
+    "foodVendors": "Restaurateurs",
+    "faq": "FAQ",
+    "specialThanks": "Remerciements",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Célébrons la culture, la cuisine et la communauté vietnamiennes au cœur de Montréal.",
+    "festival": "Festival",
+    "connect": "Nous joindre",
+    "contact": "Contact",
+    "specialThanks": "Remerciements",
+    "copyright": "Tous droits réservés."
+  },
+  "home": {
+    "title": "Projet prêt !",
+    "subtitle": "Vous pouvez maintenant ajouter des composants et commencer à construire.",
+    "buttonNote": "Nous avons déjà ajouté le composant bouton pour vous.",
+    "darkModeHint": "Appuyez sur d pour basculer en mode sombre"
+  },
+  "performers": {
+    "title": "Artistes",
+    "subtitle": "Célébrez la richesse des arts de la scène vietnamiens avec de la musique live, de la danse, des arts martiaux et bien plus encore. La programmation de cette année met en valeur le patrimoine traditionnel et la culture vietnamienne contemporaine.",
+    "schedule": "Programmation",
+    "scheduleNote": "Les horaires sont approximatifs et peuvent être modifiés. Consultez-nous à l'approche de l'événement pour le programme final.",
+    "mainStage": "Scène principale",
+    "culturalTent": "Tente culturelle"
+  },
+  "foodVendors": {
+    "title": "Restaurateurs",
+    "subtitle": "Explorez les saveurs variées de la cuisine vietnamienne à notre festival. Des classiques de rue aux spécialités régionales, nos restaurateurs apportent le meilleur du Vietnam à Montréal.",
+    "becomeVendor": "Intéressé à devenir restaurateur ?",
+    "becomeVendorDesc": "Nous accueillons les restaurateurs souhaitant partager la cuisine vietnamienne authentique avec la communauté montréalaise. Les candidatures ouvrent plusieurs mois avant le festival. Soumettez votre intérêt et notre équipe vous répondra avec les détails.",
+    "applyToVend": "Postuler comme restaurateur",
+    "readFaq": "Consulter la FAQ"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Une question ? Trouvez les réponses aux questions courantes ci-dessous.",
+    "questions": [
+      {
+        "question": "Quand et où a lieu le festival ?",
+        "answer": "Le Festival vietnamien de Montréal se tient chaque année en été. Consultez notre page contact pour les dernières dates et l'emplacement."
+      },
+      {
+        "question": "Y a-t-il des frais d'entrée ?",
+        "answer": "L'entrée générale est gratuite. Certains événements ou spectacles peuvent nécessiter un billet séparé."
+      },
+      {
+        "question": "Le festival est-il adapté aux familles ?",
+        "answer": "Absolument ! Le festival accueille des personnes de tout âge avec des activités, de la nourriture et des spectacles adaptés à toute la famille."
+      },
+      {
+        "question": "Puis-je être bénévole au festival ?",
+        "answer": "Oui ! Nous accueillons des bénévoles. Contactez-nous via notre page contact pour connaître les opportunités."
+      },
+      {
+        "question": "Y a-t-il un stationnement sur place ?",
+        "answer": "La disponibilité du stationnement dépend du lieu. Nous recommandons d'utiliser les transports en commun ou les stationnements payants à proximité."
+      },
+      {
+        "question": "Les animaux de compagnie sont-ils admis ?",
+        "answer": "Pour la sécurité et le confort de tous, les animaux de compagnie ne sont pas admis sur le site, sauf les animaux d'assistance certifiés."
+      },
+      {
+        "question": "Comment devenir restaurateur ?",
+        "answer": "Les restaurateurs intéressés peuvent postuler via notre page Restaurateurs. Les candidatures ouvrent plusieurs mois avant l'événement."
+      },
+      {
+        "question": "Quels modes de paiement sont acceptés aux kiosques ?",
+        "answer": "Les modes de paiement varient selon les restaurateurs. Nous encourageons l'acceptation des paiements en espèces et par carte, mais veuillez avoir de l'argent comptant en réserve."
+      }
+    ]
+  },
+  "specialThanks": {
+    "title": "Remerciements",
+    "subtitle": "Ce festival ne serait pas possible sans le généreux soutien de nos commanditaires, partenaires et bénévoles dévoués. Nous exprimons notre profonde gratitude à tous ceux qui ont rendu cette célébration possible.",
+    "volunteers": "Bénévoles",
+    "gratitude": "Un mot de gratitude",
+    "gratitudeText": "Nous remercions également la Ville de Montréal, les organismes communautaires vietnamiens et chaque participant qui se joint à nous pour célébrer la culture et le patrimoine vietnamiens. Votre présence fait de ce festival un succès année après année."
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "subtitle": "Vous avez une question ou souhaitez vous impliquer ? Nous serions ravis de vous entendre.",
+    "generalInquiries": "Renseignements généraux",
+    "generalDesc": "Pour les questions générales sur le festival, la billetterie ou la programmation :",
+    "mediaPress": "Médias & Presse",
+    "mediaDesc": "Pour les accréditations presse, les dossiers de presse ou les demandes d'entrevue :",
+    "vendorSponsorship": "Restaurateurs & Commandites",
+    "vendorDesc": "Pour postuler comme restaurateur ou discuter des opportunités de commandite :",
+    "followUs": "Nous suivre",
+    "followDesc": "Restez informé des annonces et des mises à jour sur l'événement :",
+    "sendMessage": "Envoyez-nous un message",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "email": "Courriel",
+    "subject": "Sujet",
+    "subjectPlaceholder": "Comment pouvons-nous vous aider ?",
+    "message": "Message",
+    "messagePlaceholder": "Écrivez votre message ici...",
+    "submit": "Envoyer le message"
+  }
+}
