@@ -10,12 +10,12 @@ const labels: Record<Locale, string> = {
   vi: "VI",
 }
 
-export function LocaleSwitcher() {
+export const LocaleSwitcher = () => {
   const locale = useLocale() as Locale
   const router = useRouter()
   const pathname = usePathname()
 
-  function switchLocale(next: Locale) {
+  const switchLocale = (next: Locale) => {
     router.replace(pathname, { locale: next })
   }
 

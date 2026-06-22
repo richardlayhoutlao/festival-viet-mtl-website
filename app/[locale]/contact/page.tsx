@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl"
 import { Button } from "@/components/ui/button"
 
-export default function ContactPage() {
+const ContactPage = () => {
   const t = useTranslations("contact")
 
   return (
@@ -124,3 +124,5 @@ export default function ContactPage() {
     </div>
   )
 }
+
+export default ContactPage

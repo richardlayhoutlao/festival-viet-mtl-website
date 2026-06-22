@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/navigation"
 
-export default function Page() {
+const Page = () => {
   const t = useTranslations("home")
 
   return (
@@ -108,3 +108,5 @@ export default function Page() {
     </div>
   )
 }
+
+export default Page

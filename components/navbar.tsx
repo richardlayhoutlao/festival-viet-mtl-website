@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation"
 import { LocaleSwitcher } from "./locale-switcher"
 import Image from "next/image"
 
-export function Navbar() {
+export const Navbar = () => {
   const t = useTranslations("nav")
 
   const links = [

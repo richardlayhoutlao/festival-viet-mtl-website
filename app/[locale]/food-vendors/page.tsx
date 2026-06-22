@@ -41,7 +41,7 @@ const vendors = [
   },
 ]
 
-export default function FoodVendorsPage() {
+const FoodVendorsPage = () => {
   const t = useTranslations("foodVendors")
 
   return (
@@ -80,3 +80,5 @@ export default function FoodVendorsPage() {
     </div>
   )
 }
+
+export default FoodVendorsPage

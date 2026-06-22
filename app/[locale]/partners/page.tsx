@@ -15,7 +15,7 @@ const volunteers = [
   "Volunteer Name 6",
 ]
 
-export default function PartnersPage() {
+const PartnersPage = () => {
   const t = useTranslations("partners")
 
   return (
@@ -67,3 +67,5 @@ export default function PartnersPage() {
     </div>
   )
 }
+
+export default PartnersPage

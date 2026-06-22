@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/navigation"
 
-export function Footer() {
+export const Footer = () => {
   const t = useTranslations("footer")
   const tNav = useTranslations("nav")
 

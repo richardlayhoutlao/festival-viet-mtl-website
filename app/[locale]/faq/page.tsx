@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl"
 
-export default function FAQPage() {
+const FAQPage = () => {
   const t = useTranslations("faq")
   const questions = t.raw("questions") as { question: string; answer: string }[]
 
@@ -27,3 +27,5 @@ export default function FAQPage() {
     </div>
   )
 }
+
+export default FAQPage
