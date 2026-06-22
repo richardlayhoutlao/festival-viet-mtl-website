@@ -4,15 +4,17 @@
     "performers": "Nghệ sĩ",
     "foodVendors": "Quán ăn",
     "faq": "Hỏi đáp",
-    "specialThanks": "Cảm ơn",
-    "contact": "Liên hệ"
+    "partners": "Đối tác",
+    "contact": "Liên hệ",
+    "applyVolunteer": "Tình nguyện viên",
+    "applyVendor": "Đăng ký quán ăn"
   },
   "footer": {
     "tagline": "Tôn vinh văn hóa, ẩm thực và cộng đồng Việt Nam tại trung tâm Montréal.",
     "festival": "Lễ hội",
     "connect": "Kết nối",
     "contact": "Liên hệ",
-    "specialThanks": "Cảm ơn",
+    "partners": "Đối tác",
     "copyright": "Bản quyền được bảo lưu."
   },
   "home": {
@@ -116,8 +118,8 @@
       }
     ]
   },
-  "specialThanks": {
-    "title": "Lời cảm ơn",
+  "partners": {
+    "title": "Đối tác",
     "subtitle": "Lễ hội này sẽ không thể thực hiện được nếu không có sự hỗ trợ hào phóng của các nhà tài trợ, đối tác và tình nguyện viên tận tụy. Chúng tôi gửi lời tri ân chân thành đến tất cả những người đã giúp lễ kỷ niệm này thành hiện thực.",
     "volunteers": "Tình nguyện viên",
     "gratitude": "Lời tri ân",

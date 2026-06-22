@@ -61,10 +61,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/special-thanks"
+                  href="/partners"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  {t("specialThanks")}
+                  {t("partners")}
                 </Link>
               </li>
               <li>

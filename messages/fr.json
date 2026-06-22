@@ -4,15 +4,17 @@
     "performers": "Artistes",
     "foodVendors": "Restaurateurs",
     "faq": "FAQ",
-    "specialThanks": "Remerciements",
-    "contact": "Contact"
+    "partners": "Partenaires",
+    "contact": "Contact",
+    "applyVolunteer": "Devenir bénévole",
+    "applyVendor": "Devenir restaurateur"
   },
   "footer": {
     "tagline": "Célébrons la culture, la cuisine et la communauté vietnamiennes au cœur de Montréal.",
     "festival": "Festival",
     "connect": "Nous joindre",
     "contact": "Contact",
-    "specialThanks": "Remerciements",
+    "partners": "Partenaires",
     "copyright": "Tous droits réservés."
   },
   "home": {
@@ -116,8 +118,8 @@
       }
     ]
   },
-  "specialThanks": {
-    "title": "Remerciements",
+  "partners": {
+    "title": "Partenaires",
     "subtitle": "Ce festival ne serait pas possible sans le généreux soutien de nos commanditaires, partenaires et bénévoles dévoués. Nous exprimons notre profonde gratitude à tous ceux qui ont rendu cette célébration possible.",
     "volunteers": "Bénévoles",
     "gratitude": "Un mot de gratitude",

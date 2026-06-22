@@ -4,15 +4,17 @@
     "performers": "Performers",
     "foodVendors": "Food Vendors",
     "faq": "FAQ",
-    "specialThanks": "Special Thanks",
-    "contact": "Contact"
+    "partners": "Partners",
+    "contact": "Contact",
+    "applyVolunteer": "Apply as volunteer",
+    "applyVendor": "Apply as food vendor"
   },
   "footer": {
     "tagline": "Celebrating Vietnamese culture, cuisine, and community in the heart of Montreal.",
     "festival": "Festival",
     "connect": "Connect",
     "contact": "Contact",
-    "specialThanks": "Special Thanks",
+    "partners": "Partners",
     "copyright": "All rights reserved."
   },
   "home": {
@@ -116,8 +118,8 @@
       }
     ]
   },
-  "specialThanks": {
-    "title": "Special Thanks",
+  "partners": {
+    "title": "Partners",
     "subtitle": "This festival would not be possible without the generous support of our sponsors, partners, and dedicated volunteers. We extend our heartfelt gratitude to everyone who made this celebration possible.",
     "volunteers": "Volunteers",
     "gratitude": "A Note of Gratitude",
