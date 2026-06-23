@@ -7,33 +7,35 @@ export const HeroSection = () => {
   const t = useTranslations("home")
 
   return (
-    <section className="bg-[#F5A623] px-8 py-16 md:min-h-130 md:px-16 md:py-24">
-      <div className="mx-auto max-w-6xl">
+    <section className="flex min-h-[calc(100svh-96px)] flex-col bg-[#F5A623] px-8 py-12 md:px-16 md:py-16">
+      <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col">
 
-        {/* Top row — edition tag + free entry badge */}
-        <div className="mb-10 flex items-center justify-between">
-          <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#C8102E]">
-            {t("edition")}
-          </span>
+        {/* Free admission badge — top right */}
+        <div className="flex justify-end">
           <span className="rounded-full bg-[#C8102E] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[#F5A623]">
             {t("feeValue")} admission
           </span>
         </div>
 
         {/* Main layout — title left, vitals right */}
-        <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between">
+        <div className="flex flex-1 flex-col gap-12 md:flex-row md:items-center md:justify-between">
 
-          {/* Title */}
-          <h1 className="text-7xl font-black leading-[0.88] tracking-tight text-[#C8102E] md:text-8xl lg:text-[8rem]">
-            Festival
-            <br />
-            Việt
-            <br />
-            Montréal
-          </h1>
+          {/* Title with edition label directly above */}
+          <div>
+            <span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.3em] text-[#C8102E]">
+              {t("edition")}
+            </span>
+            <h1 className="font-black leading-[0.88] tracking-tight text-[#C8102E]" style={{ fontSize: "clamp(4rem, 11vw, 13rem)", marginLeft: "-0.05em" }}>
+              Festival
+              <br />
+              Việt
+              <br />
+              Montréal
+            </h1>
+          </div>
 
           {/* Right column — vitals + CTA, fixed width so locale changes don't shift layout */}
-          <div className="flex shrink-0 flex-col gap-6 md:w-96">
+          <div className="flex shrink-0 flex-col gap-6 md:w-96 xl:w-120">
 
             {/* Key facts */}
             <dl className="flex flex-col gap-5">

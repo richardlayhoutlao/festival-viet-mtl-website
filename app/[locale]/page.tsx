@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl"
-import { HeroSection } from "@/components/hero-section"
+import { HeroSection } from "@/components/common/hero-section"
 
 const Page = () => {
   const t = useTranslations("home")

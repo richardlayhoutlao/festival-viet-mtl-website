@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/navigation"
-import { LocaleSwitcher } from "./locale-switcher"
+import { LocaleSwitcher } from "@/components/common/locale-switcher"
 import Image from "next/image"
 
 export const Navbar = () => {
@@ -14,14 +14,14 @@ export const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-sm">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-8 py-4">
         <Link href="/" className="flex items-center">
           <Image
             src="/VietFest_logo.jpg"
             alt="Festival Việt Montréal"
             width={200}
             height={200}
-            className="h-24 w-auto object-contain"
+            className="h-24 w-auto object-contain -ml-10"
           />
         </Link>
         <ul className="flex items-center gap-6">
