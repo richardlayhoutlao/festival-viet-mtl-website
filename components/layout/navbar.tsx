@@ -13,23 +13,23 @@ export const Navbar = () => {
   ]
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-sm">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-8 py-4">
-        <Link href="/" className="flex items-center">
+    <header className="sticky top-0 z-50 border-b border-[#C8102E]/20 bg-[#F5A623]/80">
+      <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-8 py-4">
+        <Link href="/" className="flex items-center -ml-6">
           <Image
             src="/VietFest_logo.jpg"
             alt="Festival Việt Montréal"
             width={200}
             height={200}
-            className="h-24 w-auto object-contain -ml-10"
+            className="h-24 w-auto object-contain"
           />
         </Link>
-        <ul className="flex items-center gap-6">
+        <ul className="flex items-center gap-8">
           {links.map(({ href, label }) => (
             <li key={href}>
               <Link
                 href={href}
-                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                className="text-sm font-semibold text-[#C8102E]/70 transition-colors hover:text-[#C8102E]"
               >
                 {label}
               </Link>
@@ -39,13 +39,13 @@ export const Navbar = () => {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
-            className="rounded-md border border-foreground/20 px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:border-foreground/40 hover:text-foreground"
+            className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-sm font-semibold text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
           >
             {t("applyVolunteer")}
           </Link>
           <Link
             href="/food-vendors"
-            className="rounded-md bg-foreground px-3 py-1.5 text-sm text-background transition-colors hover:bg-foreground/80"
+            className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-sm font-semibold text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
           >
             {t("applyVendor")}
           </Link>
