@@ -7,7 +7,7 @@ export const HeroSection = () => {
   const t = useTranslations("home")
 
   return (
-    <section className="bg-[#F5A623] px-8 py-16 md:px-16 md:py-24">
+    <section className="bg-[#F5A623] px-8 py-16 md:min-h-130 md:px-16 md:py-24">
       <div className="mx-auto max-w-6xl">
 
         {/* Top row — edition tag + free entry badge */}
@@ -21,7 +21,7 @@ export const HeroSection = () => {
         </div>
 
         {/* Main layout — title left, vitals right */}
-        <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
+        <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between">
 
           {/* Title */}
           <h1 className="text-7xl font-black leading-[0.88] tracking-tight text-[#C8102E] md:text-8xl lg:text-[8rem]">
@@ -80,13 +80,13 @@ export const HeroSection = () => {
               <div className="flex gap-2">
                 <Link
                   href="/contact"
-                  className="flex-1 rounded-sm border border-[#C8102E] px-4 py-2.5 text-center text-xs font-semibold text-[#C8102E] transition-colors hover:bg-[#C8102E]/10"
+                  className="flex-1 rounded-sm border border-[#C8102E] px-4 py-2.5 text-center text-xs font-semibold text-[#C8102E] transition-colors hover:bg-[#C8102E]/10 truncate"
                 >
                   {t("volunteerLink")}
                 </Link>
                 <Link
                   href="/food-vendors"
-                  className="flex-1 rounded-sm border border-[#C8102E] px-4 py-2.5 text-center text-xs font-semibold text-[#C8102E] transition-colors hover:bg-[#C8102E]/10"
+                  className="flex-1 rounded-sm border border-[#C8102E] px-4 py-2.5 text-center text-xs font-semibold text-[#C8102E] transition-colors hover:bg-[#C8102E]/10 truncate"
                 >
                   {t("foodVendorLink")}
                 </Link>
