@@ -1,8 +1,18 @@
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { Link } from "@/i18n/navigation"
+import { client } from "@/sanity/lib/client"
 
-export default function Page() {
-  const t = useTranslations("home")
+// Define GROQ query
+const VENDORS_QUERY = `*[_type == "vendor"]{
+  _id,
+  name,
+  description,
+  specialty
+}`
+
+export default async function Page() {
+  const t = await getTranslations("home")
+  const vendors = await client.fetch(VENDORS_QUERY)
 
   return (
     <div className="flex min-h-svh p-6">
@@ -50,6 +60,18 @@ export default function Page() {
               <h3>{t("vendorsTitle")}</h3>
               <div>[Food Vendors image placeholder]</div>
               <p>{t("vendorsDesc")}</p>
+
+              {/* Map out live sanity data */}
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                {vendors.map((vendor: any) => (
+                  <div key={vendor._id} className="border p-4 rounded-lg bg-muted/20">
+                    <h4 className="font-bold text-base">{vendor.name}</h4>
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider">{vendor.specialty}</p>
+                  </div>
+                ))}
+              </div>
+
+
             </div>
             <div>
               <h3>{t("performersTitle")}</h3>
