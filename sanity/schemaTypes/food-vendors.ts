@@ -20,6 +20,15 @@ export const vendorSchema = {
             title: 'Specialty',
             type: 'string',
             description: 'Specialty or main food item sold by the food vendor.',
+        },
+        {
+            name: 'image',
+            title: 'Food Vendor Image',
+            type: 'image',
+            description: 'Upload a photo of the food vendor\'s logo or product',
+            options: {
+                hotspot: true,
+            }
         }
     ]
 }
