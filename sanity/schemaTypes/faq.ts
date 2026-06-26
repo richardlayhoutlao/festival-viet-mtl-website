@@ -1,0 +1,19 @@
+export const faqSchema = {
+    name: 'faq',
+    title: 'Frequently Asked Question',
+    type: 'document',
+    fields: [
+        {
+            name: 'question',
+            title: 'Question',
+            type: 'string',
+            description: 'The frequently asked question.',
+        },
+        {
+            name: 'answer',
+            title: 'Answer',
+            type: 'text',
+            description: 'The answer to the question.',
+        }
+    ]
+}
