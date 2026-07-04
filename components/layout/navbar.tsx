@@ -1,19 +1,39 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/navigation"
 import { LocaleSwitcher } from "@/components/common/LocaleSwitcher"
 import VietFestLogo from "@/components/common/VietFestLogo"
+import { cn } from "@/utils/cn"
 
 export const Navbar = () => {
   const t = useTranslations("nav")
   const [menuOpen, setMenuOpen] = useState(false)
 
+  // Hide the apply CTAs while the hero (which shows the same CTAs) is in view;
+  // reveal them once the user scrolls past it. Pages without a hero keep them shown.
+  const [overHero, setOverHero] = useState(false)
+
+  useEffect(() => {
+    const hero = document.getElementById("hero")
+    if (!hero) {
+      setOverHero(false)
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setOverHero(entry.isIntersecting),
+      { threshold: 0 },
+    )
+    observer.observe(hero)
+    return () => observer.disconnect()
+  }, [])
+
   const links = [
-    { href: "/faq" as const, label: t("faq") },
-    { href: "/partners" as const, label: t("partners") },
-    { href: "/contact" as const, label: t("contact") },
+    { href: "/faq" as const, label: t("faq"), uppercase: false },
+    { href: "/partners" as const, label: t("partners"), uppercase: true },
+    { href: "/contact" as const, label: t("contact"), uppercase: true },
   ]
 
   return (
@@ -26,11 +46,14 @@ export const Navbar = () => {
 
         {/* Desktop nav links */}
         <ul className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8">
-          {links.map(({ href, label }) => (
+          {links.map(({ href, label, uppercase }) => (
             <li key={href}>
               <Link
                 href={href}
-                className="text-lg font-semibold text-[#C8102E]/70 transition-colors hover:text-[#C8102E]"
+                className={cn(
+                  "text-lg font-semibold text-[#C8102E]/70 transition-colors hover:text-[#C8102E]",
+                  uppercase && "uppercase",
+                )}
               >
                 {label}
               </Link>
@@ -40,18 +63,30 @@ export const Navbar = () => {
 
         {/* Desktop right actions */}
         <div className="hidden md:flex items-center gap-3">
-          <Link
-            href="/contact"
-            className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
+          <div
+            className={cn(
+              "flex items-center gap-3 transition-opacity duration-300",
+              overHero
+                ? "pointer-events-none opacity-0"
+                : "opacity-100",
+            )}
+            aria-hidden={overHero}
           >
-            {t("applyVolunteer")}
-          </Link>
-          <Link
-            href="/food-vendors"
-            className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
-          >
-            {t("applyVendor")}
-          </Link>
+            <Link
+              href="/contact"
+              tabIndex={overHero ? -1 : undefined}
+              className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
+            >
+              {t("applyVolunteer")}
+            </Link>
+            <Link
+              href="/food-vendors"
+              tabIndex={overHero ? -1 : undefined}
+              className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
+            >
+              {t("applyVendor")}
+            </Link>
+          </div>
           <LocaleSwitcher />
         </div>
 

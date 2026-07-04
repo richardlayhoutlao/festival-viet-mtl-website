@@ -7,7 +7,7 @@ export const HeroSection = () => {
   const t = useTranslations("home")
 
   return (
-    <section className="-mt-56 flex min-h-svh flex-col bg-[#F5A623] px-8 pt-56 pb-12 md:pb-16">
+    <section id="hero" className="-mt-56 flex min-h-svh flex-col bg-[#F5A623] px-8 pt-56 pb-12 md:pb-16">
       <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col justify-center">
 
         {/* Main layout — title left, vitals right */}
