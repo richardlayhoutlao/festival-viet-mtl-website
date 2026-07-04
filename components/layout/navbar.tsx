@@ -118,12 +118,15 @@ export const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-[#F5A623] border-t border-[#C8102E]/20 px-8 pb-6">
           <ul className="flex flex-col gap-4 pt-4">
-            {links.map(({ href, label }) => (
+            {links.map(({ href, label, uppercase }) => (
               <li key={href}>
                 <Link
                   href={href}
                   onClick={() => setMenuOpen(false)}
-                  className="block text-lg font-semibold text-[#C8102E]/70 transition-colors hover:text-[#C8102E]"
+                  className={cn(
+                    "block text-lg font-semibold text-[#C8102E]/70 transition-colors hover:text-[#C8102E]",
+                    uppercase && "uppercase",
+                  )}
                 >
                   {label}
                 </Link>
