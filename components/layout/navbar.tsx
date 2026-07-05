@@ -96,14 +96,14 @@ export const Navbar = () => {
             <Link
               href="/contact"
               tabIndex={overHero ? -1 : undefined}
-              className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
+              className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold uppercase text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
             >
               {t("applyVolunteer")}
             </Link>
             <Link
               href="/food-vendors"
               tabIndex={overHero ? -1 : undefined}
-              className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
+              className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold uppercase text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
             >
               {t("applyVendor")}
             </Link>
@@ -158,14 +158,14 @@ export const Navbar = () => {
             <Link
               href="/contact"
               onClick={() => setMenuOpen(false)}
-              className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold text-[#F5A623] transition-colors hover:bg-[#a50d26]"
+              className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold uppercase text-[#F5A623] transition-colors hover:bg-[#a50d26]"
             >
               {t("applyVolunteer")}
             </Link>
             <Link
               href="/food-vendors"
               onClick={() => setMenuOpen(false)}
-              className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold text-[#F5A623] transition-colors hover:bg-[#a50d26]"
+              className="rounded-sm bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold uppercase text-[#F5A623] transition-colors hover:bg-[#a50d26]"
             >
               {t("applyVendor")}
             </Link>

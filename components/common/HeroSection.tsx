@@ -74,13 +74,13 @@ export const HeroSection = () => {
               <div className="flex gap-2">
                 <Link
                   href="/contact"
-                  className="flex-1 rounded-sm bg-[#C8102E] px-6 py-5 text-center text-xl font-bold text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
+                  className="flex-1 rounded-sm bg-[#C8102E] px-6 py-5 text-center text-xl font-bold uppercase text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
                 >
                   {t("volunteerLink")}
                 </Link>
                 <Link
                   href="/food-vendors"
-                  className="flex-1 rounded-sm bg-[#C8102E] px-6 py-5 text-center text-xl font-bold text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
+                  className="flex-1 rounded-sm bg-[#C8102E] px-6 py-5 text-center text-xl font-bold uppercase text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
                 >
                   {t("foodVendorLink")}
                 </Link>
