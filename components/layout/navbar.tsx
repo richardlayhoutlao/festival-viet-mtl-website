@@ -2,17 +2,20 @@
 
 import { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
-import { Link } from "@/i18n/navigation"
+import { Link, usePathname } from "@/i18n/navigation"
 import { LocaleSwitcher } from "@/components/common/LocaleSwitcher"
 import VietFestLogo from "@/components/common/VietFestLogo"
 import { cn } from "@/utils/cn"
 
 export const Navbar = () => {
   const t = useTranslations("nav")
+  const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
 
-  // Hide the apply CTAs while the hero (which shows the same CTAs) is in view;
-  // reveal them once the user scrolls past it. Pages without a hero keep them shown.
+  // Hide the apply CTAs (and enlarge the logo) while the hero — which shows the
+  // same CTAs — is in view; reveal them once the user scrolls past it. Pages
+  // without a hero keep the compact state (CTAs shown). Re-runs on navigation so
+  // the observer re-attaches to the new page's hero instead of a stale node.
   const [overHero, setOverHero] = useState(false)
 
   useEffect(() => {
@@ -28,7 +31,7 @@ export const Navbar = () => {
     )
     observer.observe(hero)
     return () => observer.disconnect()
-  }, [])
+  }, [pathname])
 
   const links = [
     { href: "/faq" as const, label: t("faq"), uppercase: false },
@@ -38,10 +41,28 @@ export const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-[#F5A623]">
-      <nav className="relative mx-auto flex max-w-[1600px] items-center justify-between px-8 py-4">
-        {/* Logo */}
-        <Link href="/" className="flex items-center -ml-6">
-          <VietFestLogo color="#C8102E" className="h-48 w-auto" />
+      <nav className="relative mx-auto flex max-w-[1600px] items-center justify-between px-8 py-2">
+        {/* Logo — shrinks a bit while over the hero, full size once scrolled past.
+            Wordmark appears alongside the CTAs once the hero is out of view. */}
+        <Link href="/" className="flex items-center gap-2 -ml-6">
+          <VietFestLogo
+            color="#C8102E"
+            className={cn(
+              "w-auto transition-[height] duration-300",
+              overHero ? "h-28" : "h-24",
+            )}
+          />
+          <span
+            className={cn(
+              "flex flex-col font-black leading-none tracking-tight text-[#C8102E] text-2xl transition-opacity duration-300",
+              overHero ? "pointer-events-none opacity-0" : "opacity-100",
+            )}
+            aria-hidden={overHero}
+          >
+            <span>Festival</span>
+            <span className="-mt-1.5">Việt</span>
+            <span className="-mt-1.5">Montréal</span>
+          </span>
         </Link>
 
         {/* Desktop nav links */}
