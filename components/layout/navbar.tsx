@@ -40,8 +40,8 @@ export const Navbar = () => {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-[#F5A623]">
-      <nav className="relative mx-auto flex max-w-[1600px] items-center justify-between px-8 py-2">
+    <header className="sticky top-0 z-50 bg-[#F5A623] px-8">
+      <nav className="relative mx-auto flex max-w-[1600px] items-center justify-between py-2">
         {/* Logo — shrinks a bit while over the hero, full size once scrolled past.
             Wordmark appears alongside the CTAs once the hero is out of view. */}
         <Link href="/" className="flex items-center gap-2 -ml-6">

@@ -18,7 +18,7 @@ export const HeroSection = () => {
             <span className="mb-14 block text-[10px] font-bold uppercase tracking-[0.3em] text-[#C8102E]">
               {t("edition")}
             </span>
-            <h1 className="font-black leading-[0.88] tracking-tight text-[#C8102E] text-[clamp(4rem,11vw,13rem)] ml-[-0.05em]">
+            <h1 className="font-black leading-[0.88] tracking-tight text-[#C8102E] text-[clamp(3.5rem,10vw,11.5rem)] ml-[-0.05em]">
               Festival
               <br />
               Việt
