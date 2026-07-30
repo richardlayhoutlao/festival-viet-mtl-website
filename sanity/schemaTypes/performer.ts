@@ -6,19 +6,19 @@ export const performerSchema = {
         {
             name: 'name',
             title: 'Performer',
-            type: 'string',
+            type: 'localeString',
             description: 'The official name of the performer or group.',
         },
         {
             name: 'artType',
             title: 'Type of Art',
-            type: 'string',
+            type: 'localeString',
             description: 'What kind of performance do they do?',
         },
         {
             name: 'description',
             title: 'Description',
-            type: 'text',
+            type: 'localeText',
             description: 'A description of the performance.',
         },
         {

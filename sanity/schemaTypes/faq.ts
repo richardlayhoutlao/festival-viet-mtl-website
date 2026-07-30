@@ -6,13 +6,13 @@ export const faqSchema = {
         {
             name: 'question',
             title: 'Question',
-            type: 'string',
+            type: 'localeString',
             description: 'The frequently asked question.',
         },
         {
             name: 'answer',
             title: 'Answer',
-            type: 'text',
+            type: 'localeText',
             description: 'The answer to the question.',
         }
     ]

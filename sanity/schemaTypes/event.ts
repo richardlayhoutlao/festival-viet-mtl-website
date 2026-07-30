@@ -6,7 +6,7 @@ export const eventSchema = {
         {
             name: 'title',
             title: 'Event Title',
-            type: 'string',
+            type: 'localeString',
             description: 'The name of the performance or activity.',
         },
         {
@@ -18,13 +18,13 @@ export const eventSchema = {
         {
             name: 'location',
             title: 'Location',
-            type: 'string',
+            type: 'localeString',
             description: 'Where is the event happening at?',
         },
         {
             name: 'description',
             title: 'Description',
-            type: 'text', 
+            type: 'localeText', 
             description: 'Details about the event or performer.',
         }
     ]

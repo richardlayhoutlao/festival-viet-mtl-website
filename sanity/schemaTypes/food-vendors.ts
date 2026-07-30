@@ -6,19 +6,19 @@ export const vendorSchema = {
         {
             name: 'name',
             title: 'Vendor Name',
-            type: 'string',
+            type: 'localeString',
             description: 'The official name of the food vendor.',
         },
         {
             name: 'description',
             title: 'Description',
-            type: 'text',
+            type: 'localeText',
             description: 'Description of the goods sold by the food vendor.',
         },
         {
             name: 'specialty',
             title: 'Specialty',
-            type: 'string',
+            type: 'localeString',
             description: 'Specialty or main food item sold by the food vendor.',
         },
         {

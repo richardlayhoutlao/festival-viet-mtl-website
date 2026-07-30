@@ -6,7 +6,7 @@ export const sponsorSchema = {
         {
             name: 'name',
             title: 'Sponsor Name',
-            type: 'string',
+            type: 'localeString',
             description: 'The official name of the sponsoring company or organization.',
             validation: (Rule: any) => Rule.required(),
         },
@@ -22,7 +22,7 @@ export const sponsorSchema = {
         {
             name: 'description',
             title: 'Description (Optional)',
-            type: 'text',
+            type: 'localeText',
             description: 'Optional: A short blurb about the sponsor and their contribution.',
         }
     ]
