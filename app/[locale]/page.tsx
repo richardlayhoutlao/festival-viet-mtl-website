@@ -1,18 +1,28 @@
 import { getTranslations } from "next-intl/server"
 import { Link } from "@/i18n/navigation"
 import { client } from "@/sanity/lib/client"
+import { PathParamsContext } from "next/dist/shared/lib/hooks-client-context.shared-runtime"
 
 // Define GROQ query
 const VENDORS_QUERY = `*[_type == "vendor"]{
   _id,
-  name,
-  description,
-  specialty
+  "name": coalesce(name[$locale], name.en, "Unknown Vendor"),
+  "description": coalesce(description[$locale], description.en, ""),
+  "specialty": coalesce(specialty[$locale], specialty.en, ""),
+  "imageUrl": image.asset->url
 }`
 
-export default async function Page() {
+type Props = {
+  params: Promise<{ locale: string }>
+}
+
+export default async function Page({ params }: Props) {
+  const { locale } = await params;
+
   const t = await getTranslations("home")
-  const vendors = await client.fetch(VENDORS_QUERY)
+
+  const vendors = await client.fetch(VENDORS_QUERY, {locale})
+  console.log("SANITY DATA:", vendors);
 
   return (
     <div className="flex min-h-svh p-6">
@@ -65,8 +75,18 @@ export default async function Page() {
               <div className="mt-4 grid gap-4 sm:grid-cols-2">
                 {vendors.map((vendor: any) => (
                   <div key={vendor._id} className="border p-4 rounded-lg bg-muted/20">
+                    {vendor.imageUrl && (
+                      <img 
+                        src={vendor.imageUrl} 
+                        alt={vendor.name} 
+                        className="w-full h-48 object-cover rounded-md mb-4" 
+                      />
+                    )}
                     <h4 className="font-bold text-base">{vendor.name}</h4>
                     <p className="text-xs text-muted-foreground uppercase tracking-wider">{vendor.specialty}</p>
+                    {vendor.description && (
+                      <p className="mt-2 text-sm">{vendor.description}</p>
+                    )}
                   </div>
                 ))}
               </div>
