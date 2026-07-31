@@ -1,0 +1,10 @@
+{
+  "//": "esbuild reads compilerOptions.paths from cfg.tsconfig. Redeclaring paths replaces the inherited map wholesale, so @/* is restated here (relative to THIS file's directory) alongside the navigation shim alias.",
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@/i18n/navigation": ["./shims/navigation.tsx"],
+      "@/*": ["../*"]
+    }
+  }
+}

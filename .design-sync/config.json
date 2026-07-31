@@ -1,0 +1,49 @@
+{
+  "projectId": "e4022de2-86ba-4bac-a4a2-cd9181a336c9",
+  "shape": "package",
+  "pkg": "festival-viet-mtl-website",
+  "globalName": "FestivalVietMtl",
+  "srcDir": "components",
+  "tsconfig": ".design-sync/tsconfig.ds.json",
+  "componentSrcMap": {
+    "SVGComponent": null,
+    "BackgroundVideo": "components/common/BackgroundVideo.tsx",
+    "Button": "components/ui/button.tsx",
+    "Footer": "components/layout/footer.tsx",
+    "HeroSection": "components/common/HeroSection.tsx",
+    "LocaleSwitcher": "components/common/LocaleSwitcher.tsx",
+    "Navbar": "components/layout/navbar.tsx",
+    "ThemeProvider": "components/common/ThemeProvider.tsx",
+    "VietFestLogo": "components/common/VietFestLogo.tsx"
+  },
+  "cssEntry": ".design-sync/.cache/compiled.css",
+  "extraFonts": [".design-sync/fonts/be-vietnam-pro.css"],
+  "readmeHeader": ".design-sync/conventions.md",
+  "extraEntries": [
+    "./.design-sync/shims/process-env.ts",
+    "./.design-sync/preview-env.tsx"
+  ],
+  "dtsPropsFor": {
+    "Button": "/** Visual style. @default \"default\" */\n  variant?: \"default\" | \"outline\" | \"secondary\" | \"ghost\" | \"destructive\" | \"link\";\n  /** Control height / padding scale. @default \"default\" */\n  size?: \"default\" | \"xs\" | \"sm\" | \"lg\" | \"icon\" | \"icon-xs\" | \"icon-sm\" | \"icon-lg\";\n  /** Render the single child element instead of a <button> (radix Slot). */\n  asChild?: boolean;\n  className?: string;\n  children?: React.ReactNode;\n  disabled?: boolean;\n  type?: \"button\" | \"submit\" | \"reset\";\n  onClick?: React.MouseEventHandler<HTMLButtonElement>;",
+    "BackgroundVideo": "/** Accessible title for the YouTube IFrame player. */\n  title: string;",
+    "VietFestLogo": "/** Fill colour for the mark. @default \"currentColor\" */\n  color?: string;\n  className?: string;\n  width?: number | string;\n  height?: number | string;",
+    "HeroSection": "/* No props — every string comes from the \"home\" namespace of the active next-intl message catalogue. */",
+    "Navbar": "/* No props — links and labels come from the \"nav\" namespace of the active next-intl message catalogue. */",
+    "Footer": "/* No props — copy comes from the \"footer\" and \"nav\" namespaces of the active next-intl message catalogue. */",
+    "LocaleSwitcher": "/* No props — reads the active locale from next-intl and switches between en / fr / vi. */"
+  },
+  "overrides": {
+    "HeroSection": {
+      "cardMode": "single",
+      "primaryStory": "Default",
+      "viewport": "1440x900"
+    }
+  },
+  "provider": {
+    "component": "NextIntlClientProvider",
+    "props": {
+      "locale": "en",
+      "messages": { "$ref": "previewMessages" }
+    }
+  }
+}

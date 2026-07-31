@@ -1,0 +1,27 @@
+/*
+ * Tailwind entry used ONLY by the design-sync converter.
+ *
+ * The app compiles app/globals.css through Next's PostCSS pipeline, so the repo
+ * ships no static stylesheet. This wrapper re-imports globals.css and points
+ * Tailwind's v4 source detection at the component + app trees explicitly
+ * (auto-detection is anchored to the entry file's directory, which would miss
+ * components/ from app/globals.css).
+ */
+@import "../app/globals.css";
+
+@source "../components";
+@source "../app";
+
+/*
+ * globals.css declares `--font-sans: var(--font-sans)`, which is self-referential
+ * and resolves to nothing on its own — in the real app the value arrives from
+ * next/font's generated class on <html> (app/[locale]/layout.tsx). Nothing binds
+ * it outside a Next build, so every rule that resolves to font-sans would fall
+ * back to a browser serif. This binds it to the same family, matching the
+ * @font-face rules shipped via cfg.extraFonts.
+ *
+ * Declared after the import so it wins the cascade over the @theme block.
+ */
+:root {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+}
