@@ -4,15 +4,17 @@
     "performers": "Performers",
     "foodVendors": "Food Vendors",
     "faq": "FAQ",
-    "specialThanks": "Special Thanks",
-    "contact": "Contact"
+    "partners": "Partners",
+    "contact": "Contact",
+    "applyVolunteer": "Apply as volunteer",
+    "applyVendor": "Apply as food vendor"
   },
   "footer": {
     "tagline": "Celebrating Vietnamese culture, cuisine, and community in the heart of Montreal.",
     "festival": "Festival",
     "connect": "Connect",
     "contact": "Contact",
-    "specialThanks": "Special Thanks",
+    "partners": "Partners",
     "copyright": "All rights reserved."
   },
   "home": {
@@ -26,9 +28,12 @@
     "locationValue": "Parc Romeo-Charette",
     "locationDetail": "Jean-Talon Ouest – Chem. Côte-des-Neiges",
     "cta": "See the lineup",
-    "exploreTitle": "Explore a Festival of Authentic Vietnamese Delights",
-    "exploreBody1": "Experience the vibrant flavors of Vietnam at our street food festival! Enjoy the crunch of a freshly made Vietnamese sandwich, sip on sweet iced coffee, and warm up with a comforting bowl of noodle soup. Try crispy spring rolls, grilled skewers, and refreshing tropical drinks, all made with authentic ingredients and bold flavors.",
-    "exploreBody2": "Join us for a celebration filled with delicious food, cultural performances, and an unforgettable experience that brings the heart of Vietnam to your city!",
+    "exploreEyebrow": "The festival",
+    "exploreTitleLine1": "One Vietnamese Festival",
+    "exploreTitleLine2": "One Sunday in Montreal",
+    "exploreBody1": "More than a street food festival, it's a day of Vietnamese culture in the middle of Montréal. Real cooking made on site by vendors from across the community, alongside the music, colours, and traditions that come with it.",
+    "exploreBody2": "Free to walk in. Come for the food, stay for the vibe.",
+    "traditionEyebrow": "The heritage",
     "traditionTitle": "A Taste of Tradition and Community",
     "traditionBody1": "More than just food, this festival is a tribute to the rich cultural heritage of Vietnam. Each dish tells a story of tradition, family, and craftsmanship passed down through generations. Whether you're discovering these flavors for the first time or reliving childhood memories, this is a place to connect, share, and celebrate together.",
     "traditionBody2": "Are you ready to taste the adventure?",
@@ -52,6 +57,7 @@
     "locationAddress": "Jean-Talon O, Montréal, QC H3R 2M2",
     "feeLabel": "Fee",
     "feeValue": "Free",
+    "freeAdmission": "Free admission",
     "scheduleLabel": "Schedule",
     "scheduleValue": "Sunday, September 6, 2026: 11:00 – 19:00",
     "partnersTitle": "Partners",
@@ -79,8 +85,9 @@
     "readFaq": "Read the FAQ"
   },
   "faq": {
+    "eyebrow": "Good to know",
     "title": "Frequently Asked Questions",
-    "subtitle": "Have a question? Find answers to common inquiries below.",
+    "subtitle": "Find answers to common inquiries below.",
     "questions": [
       {
         "question": "When and where is the festival?",
@@ -114,10 +121,12 @@
         "question": "What payment methods are accepted at vendor booths?",
         "answer": "Payment methods vary by vendor. We encourage vendors to accept both cash and card, but please carry some cash as a backup."
       }
-    ]
+    ],
+    "ctaTitle": "Still have a question?",
+    "ctaLink": "Contact us"
   },
-  "specialThanks": {
-    "title": "Special Thanks",
+  "partners": {
+    "title": "Partners",
     "subtitle": "This festival would not be possible without the generous support of our sponsors, partners, and dedicated volunteers. We extend our heartfelt gratitude to everyone who made this celebration possible.",
     "volunteers": "Volunteers",
     "gratitude": "A Note of Gratitude",

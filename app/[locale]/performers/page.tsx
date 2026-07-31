@@ -48,7 +48,7 @@ const schedule = [
   { time: "5:00 PM", act: "DJ Sài Gòn Nights", stageKey: "mainStage" as const },
 ]
 
-export default function PerformersPage() {
+const PerformersPage = () => {
   const t = useTranslations("performers")
 
   return (
@@ -93,3 +93,5 @@ export default function PerformersPage() {
     </div>
   )
 }
+
+export default PerformersPage

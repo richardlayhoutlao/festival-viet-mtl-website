@@ -20,10 +20,10 @@ export const routing = defineRouting({
       fr: "/faq",
       vi: "/hoi-dap",
     },
-    "/special-thanks": {
-      en: "/special-thanks",
-      fr: "/remerciements",
-      vi: "/cam-on",
+    "/partners": {
+      en: "/partners",
+      fr: "/partenaires",
+      vi: "/doi-tac",
     },
     "/contact": {
       en: "/contact",

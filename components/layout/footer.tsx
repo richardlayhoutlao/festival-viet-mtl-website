@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/navigation"
 
-export function Footer() {
+export const Footer = () => {
   const t = useTranslations("footer")
   const tNav = useTranslations("nav")
 
@@ -61,10 +61,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/special-thanks"
+                  href="/partners"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  {t("specialThanks")}
+                  {t("partners")}
                 </Link>
               </li>
               <li>

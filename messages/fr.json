@@ -4,15 +4,17 @@
     "performers": "Artistes",
     "foodVendors": "Restaurateurs",
     "faq": "FAQ",
-    "specialThanks": "Remerciements",
-    "contact": "Contact"
+    "partners": "Partenaires",
+    "contact": "Contact",
+    "applyVolunteer": "Devenir bénévole",
+    "applyVendor": "Devenir restaurateur"
   },
   "footer": {
     "tagline": "Célébrons la culture, la cuisine et la communauté vietnamiennes au cœur de Montréal.",
     "festival": "Festival",
     "connect": "Nous joindre",
     "contact": "Contact",
-    "specialThanks": "Remerciements",
+    "partners": "Partenaires",
     "copyright": "Tous droits réservés."
   },
   "home": {
@@ -26,9 +28,12 @@
     "locationValue": "Parc Romeo-Charette",
     "locationDetail": "Jean-Talon Ouest – Chem. Côte-des-Neiges",
     "cta": "Voir la programmation",
-    "exploreTitle": "Explorez un festival de délices vietnamiens authentiques",
-    "exploreBody1": "Découvrez les saveurs vibrantes du Vietnam à notre festival de cuisine de rue ! Savourez le croquant d'un bánh mì fraîchement préparé, sirotez un café glacé sucré et réchauffez-vous avec un bol de soupe de nouilles réconfortant. Goûtez aux rouleaux de printemps croustillants, aux brochettes grillées et aux boissons tropicales rafraîchissantes, le tout préparé avec des ingrédients authentiques et des saveurs audacieuses.",
-    "exploreBody2": "Rejoignez-nous pour une célébration remplie de délices culinaires, de spectacles culturels et d'une expérience inoubliable qui apporte le cœur du Vietnam dans votre ville !",
+    "exploreEyebrow": "Le festival",
+    "exploreTitleLine1": "Un festival vietnamien",
+    "exploreTitleLine2": "Un dimanche à Montréal",
+    "exploreBody1": "Plus qu'un festival de cuisine de rue, c'est une journée de culture vietnamienne au cœur de Montréal. De la vraie cuisine préparée sur place par des marchands de toute la communauté, avec la musique, les couleurs et les traditions qui l'accompagnent.",
+    "exploreBody2": "Entrée libre. Venez pour la bouffe, restez pour l'ambiance.",
+    "traditionEyebrow": "Le patrimoine",
     "traditionTitle": "Un goût de tradition et de communauté",
     "traditionBody1": "Bien plus que de la nourriture, ce festival est un hommage au riche patrimoine culturel du Vietnam. Chaque plat raconte une histoire de tradition, de famille et de savoir-faire transmis de génération en génération. Que vous découvriez ces saveurs pour la première fois ou que vous reviviez des souvenirs d'enfance, c'est un endroit pour se connecter, partager et célébrer ensemble.",
     "traditionBody2": "Êtes-vous prêt à goûter l'aventure ?",
@@ -52,6 +57,7 @@
     "locationAddress": "Jean-Talon O, Montréal, QC H3R 2M2",
     "feeLabel": "Entrée",
     "feeValue": "Gratuit",
+    "freeAdmission": "Entrée gratuite",
     "scheduleLabel": "Horaire",
     "scheduleValue": "Dimanche 6 septembre 2026 : 11h00 – 19h00",
     "partnersTitle": "Partenaires",
@@ -79,8 +85,9 @@
     "readFaq": "Consulter la FAQ"
   },
   "faq": {
+    "eyebrow": "Bon à savoir",
     "title": "Questions fréquentes",
-    "subtitle": "Une question ? Trouvez les réponses aux questions courantes ci-dessous.",
+    "subtitle": "Trouvez les réponses aux questions courantes ci-dessous.",
     "questions": [
       {
         "question": "Quand et où a lieu le festival ?",
@@ -114,10 +121,12 @@
         "question": "Quels modes de paiement sont acceptés aux kiosques ?",
         "answer": "Les modes de paiement varient selon les restaurateurs. Nous encourageons l'acceptation des paiements en espèces et par carte, mais veuillez avoir de l'argent comptant en réserve."
       }
-    ]
+    ],
+    "ctaTitle": "Vous avez encore une question ?",
+    "ctaLink": "Nous contacter"
   },
-  "specialThanks": {
-    "title": "Remerciements",
+  "partners": {
+    "title": "Partenaires",
     "subtitle": "Ce festival ne serait pas possible sans le généreux soutien de nos commanditaires, partenaires et bénévoles dévoués. Nous exprimons notre profonde gratitude à tous ceux qui ont rendu cette célébration possible.",
     "volunteers": "Bénévoles",
     "gratitude": "Un mot de gratitude",

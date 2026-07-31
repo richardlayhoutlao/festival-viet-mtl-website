@@ -4,15 +4,17 @@
     "performers": "Nghệ sĩ",
     "foodVendors": "Quán ăn",
     "faq": "Hỏi đáp",
-    "specialThanks": "Cảm ơn",
-    "contact": "Liên hệ"
+    "partners": "Đối tác",
+    "contact": "Liên hệ",
+    "applyVolunteer": "Tình nguyện viên",
+    "applyVendor": "Đăng ký quán ăn"
   },
   "footer": {
     "tagline": "Tôn vinh văn hóa, ẩm thực và cộng đồng Việt Nam tại trung tâm Montréal.",
     "festival": "Lễ hội",
     "connect": "Kết nối",
     "contact": "Liên hệ",
-    "specialThanks": "Cảm ơn",
+    "partners": "Đối tác",
     "copyright": "Bản quyền được bảo lưu."
   },
   "home": {
@@ -26,9 +28,12 @@
     "locationValue": "Parc Romeo-Charette",
     "locationDetail": "Jean-Talon Ouest – Chem. Côte-des-Neiges",
     "cta": "Xem chương trình",
-    "exploreTitle": "Khám phá lễ hội ẩm thực Việt Nam đích thực",
-    "exploreBody1": "Trải nghiệm hương vị sống động của Việt Nam tại lễ hội ẩm thực đường phố của chúng tôi! Thưởng thức bánh mì giòn rụm mới làm, nhâm nhi cà phê đá ngọt ngào và ấm lòng với tô bún thơm ngon. Hãy thử chả giò giòn rụm, xiên nướng và đồ uống nhiệt đới tươi mát, tất cả được làm từ nguyên liệu chính thống và hương vị đậm đà.",
-    "exploreBody2": "Hãy tham gia cùng chúng tôi trong buổi lễ hội đầy ẩm thực ngon, biểu diễn văn hóa và trải nghiệm khó quên mang trái tim Việt Nam đến thành phố của bạn!",
+    "exploreEyebrow": "Lễ hội",
+    "exploreTitleLine1": "Một lễ hội Việt Nam",
+    "exploreTitleLine2": "Một ngày Chủ nhật ở Montréal",
+    "exploreBody1": "Không chỉ là một lễ hội ẩm thực đường phố, đây là một ngày văn hóa Việt Nam giữa lòng Montréal. Món ăn được nấu ngay tại chỗ bởi các gian hàng khắp cộng đồng, cùng với âm nhạc, sắc màu và những nét truyền thống đi kèm.",
+    "exploreBody2": "Vào cửa miễn phí. Đến vì món ăn, ở lại vì không khí lễ hội.",
+    "traditionEyebrow": "Di sản",
     "traditionTitle": "Hương vị truyền thống và cộng đồng",
     "traditionBody1": "Hơn cả ẩm thực, lễ hội này là sự tôn vinh di sản văn hóa phong phú của Việt Nam. Mỗi món ăn kể câu chuyện về truyền thống, gia đình và sự khéo léo được truyền qua nhiều thế hệ. Dù bạn đang khám phá những hương vị này lần đầu hay sống lại ký ức tuổi thơ, đây là nơi để kết nối, chia sẻ và cùng nhau ăn mừng.",
     "traditionBody2": "Bạn đã sẵn sàng nếm thử cuộc phiêu lưu chưa?",
@@ -52,6 +57,7 @@
     "locationAddress": "Jean-Talon O, Montréal, QC H3R 2M2",
     "feeLabel": "Phí vào cửa",
     "feeValue": "Miễn phí",
+    "freeAdmission": "Vào cửa miễn phí",
     "scheduleLabel": "Lịch trình",
     "scheduleValue": "Chủ nhật, 6 tháng 9 năm 2026: 11:00 – 19:00",
     "partnersTitle": "Đối tác",
@@ -79,8 +85,9 @@
     "readFaq": "Xem câu hỏi thường gặp"
   },
   "faq": {
+    "eyebrow": "Thông tin hữu ích",
     "title": "Câu hỏi thường gặp",
-    "subtitle": "Bạn có câu hỏi? Tìm câu trả lời cho các thắc mắc phổ biến bên dưới.",
+    "subtitle": "Tìm câu trả lời cho các thắc mắc phổ biến bên dưới.",
     "questions": [
       {
         "question": "Lễ hội diễn ra khi nào và ở đâu?",
@@ -114,10 +121,12 @@
         "question": "Các gian hàng chấp nhận những phương thức thanh toán nào?",
         "answer": "Phương thức thanh toán tùy thuộc vào từng quán. Chúng tôi khuyến khích chấp nhận cả tiền mặt lẫn thẻ, nhưng hãy mang theo tiền mặt dự phòng."
       }
-    ]
+    ],
+    "ctaTitle": "Vẫn còn thắc mắc?",
+    "ctaLink": "Liên hệ chúng tôi"
   },
-  "specialThanks": {
-    "title": "Lời cảm ơn",
+  "partners": {
+    "title": "Đối tác",
     "subtitle": "Lễ hội này sẽ không thể thực hiện được nếu không có sự hỗ trợ hào phóng của các nhà tài trợ, đối tác và tình nguyện viên tận tụy. Chúng tôi gửi lời tri ân chân thành đến tất cả những người đã giúp lễ kỷ niệm này thành hiện thực.",
     "volunteers": "Tình nguyện viên",
     "gratitude": "Lời tri ân",

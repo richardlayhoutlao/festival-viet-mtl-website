@@ -15,8 +15,8 @@ const volunteers = [
   "Volunteer Name 6",
 ]
 
-export default function SpecialThanksPage() {
-  const t = useTranslations("specialThanks")
+const PartnersPage = () => {
+  const t = useTranslations("partners")
 
   return (
     <div className="flex min-h-svh flex-col items-center px-6 py-12">
@@ -67,3 +67,5 @@ export default function SpecialThanksPage() {
     </div>
   )
 }
+
+export default PartnersPage
