@@ -53,6 +53,17 @@ node .ds-sync/resync.mjs --config .design-sync/config.json \
   props, so every `<Name>Props` came out as `[key: string]: unknown`. Re-check
   these against source when a component's API changes — nothing validates them.
 
+- **Prose in `.design-sync/` leaks into the shipped stylesheet.** Tailwind's
+  automatic source detection sweeps this directory too, not just the paths named
+  by `@source`. `conventions.md` cites `bg-blue-500` and `gap-16` as examples of
+  classes that *don't* exist — and the scanner generated both, making the
+  document false about itself. Fixed by `@source not "../.design-sync/*.md"` in
+  `ds-styles.css`. Caught on the 2nd sync (2026-07-31); the uploaded CSS was
+  never affected, because the first sync's final build predated `conventions.md`.
+  **Keep the exclusion**, and don't widen it to all of `.design-sync/` —
+  `previews/*.tsx` must stay scanned so authored preview wrappers keep their
+  classes.
+
 ## Known render warns (a warn NOT listed here is new — investigate it)
 
 - `[RENDER_THIN] VietFestLogo` — legitimate. It's a pure SVG mark with no text
@@ -86,6 +97,10 @@ Regenerate with the same Google Fonts CSS API URL if weights change.
   `conventions.md`, but if the design agent's output looks unstyled, this is why.
   A future sync could widen it with Tailwind v4 `@source inline(...)` in
   `ds-styles.css` — deliberately not done here to keep the sheet small.
+- **Anything written into `.design-sync/` can change the stylesheet.** The `*.md`
+  exclusion covers today's prose, but a new non-markdown doc or scratch file here
+  would be scanned again. After adding files to this directory, diff the
+  compiled CSS size before trusting the build.
 - **`dtsPropsFor` and `conventions.md` are hand-maintained.** Both enumerate real
   names (variants, tokens, classes) verified against the build on 2026-07-31.
   Neither is regenerated; a component API change will not invalidate them

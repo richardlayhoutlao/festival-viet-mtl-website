@@ -13,6 +13,16 @@
 @source "../app";
 
 /*
+ * Tailwind's automatic source detection also sweeps this directory, so prose
+ * files here leak into the shipped stylesheet: conventions.md names
+ * `bg-blue-500` and `gap-16` as examples of classes that DON'T exist, and the
+ * scanner duly generated both — making the documentation false about itself.
+ * Excluding the markdown keeps docs inert. previews/ and the shims stay
+ * scanned, since authored preview wrappers legitimately need their classes.
+ */
+@source not "../.design-sync/*.md";
+
+/*
  * globals.css declares `--font-sans: var(--font-sans)`, which is self-referential
  * and resolves to nothing on its own — in the real app the value arrives from
  * next/font's generated class on <html> (app/[locale]/layout.tsx). Nothing binds
