@@ -85,8 +85,9 @@
     "readFaq": "Xem câu hỏi thường gặp"
   },
   "faq": {
+    "eyebrow": "Thông tin hữu ích",
     "title": "Câu hỏi thường gặp",
-    "subtitle": "Bạn có câu hỏi? Tìm câu trả lời cho các thắc mắc phổ biến bên dưới.",
+    "subtitle": "Tìm câu trả lời cho các thắc mắc phổ biến bên dưới.",
     "questions": [
       {
         "question": "Lễ hội diễn ra khi nào và ở đâu?",
@@ -120,7 +121,9 @@
         "question": "Các gian hàng chấp nhận những phương thức thanh toán nào?",
         "answer": "Phương thức thanh toán tùy thuộc vào từng quán. Chúng tôi khuyến khích chấp nhận cả tiền mặt lẫn thẻ, nhưng hãy mang theo tiền mặt dự phòng."
       }
-    ]
+    ],
+    "ctaTitle": "Vẫn còn thắc mắc?",
+    "ctaLink": "Liên hệ chúng tôi"
   },
   "partners": {
     "title": "Đối tác",

@@ -85,8 +85,9 @@
     "readFaq": "Consulter la FAQ"
   },
   "faq": {
+    "eyebrow": "Bon à savoir",
     "title": "Questions fréquentes",
-    "subtitle": "Une question ? Trouvez les réponses aux questions courantes ci-dessous.",
+    "subtitle": "Trouvez les réponses aux questions courantes ci-dessous.",
     "questions": [
       {
         "question": "Quand et où a lieu le festival ?",
@@ -120,7 +121,9 @@
         "question": "Quels modes de paiement sont acceptés aux kiosques ?",
         "answer": "Les modes de paiement varient selon les restaurateurs. Nous encourageons l'acceptation des paiements en espèces et par carte, mais veuillez avoir de l'argent comptant en réserve."
       }
-    ]
+    ],
+    "ctaTitle": "Vous avez encore une question ?",
+    "ctaLink": "Nous contacter"
   },
   "partners": {
     "title": "Partenaires",

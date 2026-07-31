@@ -85,8 +85,9 @@
     "readFaq": "Read the FAQ"
   },
   "faq": {
+    "eyebrow": "Good to know",
     "title": "Frequently Asked Questions",
-    "subtitle": "Have a question? Find answers to common inquiries below.",
+    "subtitle": "Find answers to common inquiries below.",
     "questions": [
       {
         "question": "When and where is the festival?",
@@ -120,7 +121,9 @@
         "question": "What payment methods are accepted at vendor booths?",
         "answer": "Payment methods vary by vendor. We encourage vendors to accept both cash and card, but please carry some cash as a backup."
       }
-    ]
+    ],
+    "ctaTitle": "Still have a question?",
+    "ctaLink": "Contact us"
   },
   "partners": {
     "title": "Partners",
