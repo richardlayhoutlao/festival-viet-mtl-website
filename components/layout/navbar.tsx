@@ -7,6 +7,12 @@ import { LocaleSwitcher } from "@/components/common/LocaleSwitcher"
 import VietFestLogo from "@/components/common/VietFestLogo"
 import { cn } from "@/utils/cn"
 
+// The same treatment as the footer's link row — uppercase, tracked, with the
+// underline drawn transparent at rest so revealing it on hover can't reflow the
+// row. Red on marigold here, marigold on red down there.
+const LINK =
+  "text-base font-bold uppercase tracking-[0.1em] text-[#C8102E] underline decoration-2 decoration-transparent underline-offset-[6px] transition-colors duration-200 hover:decoration-[#C8102E] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C8102E] motion-reduce:transition-none"
+
 export const Navbar = () => {
   const t = useTranslations("nav")
   const pathname = usePathname()
@@ -34,9 +40,9 @@ export const Navbar = () => {
   }, [pathname])
 
   const links = [
-    { href: "/faq" as const, label: t("faq"), uppercase: false },
-    { href: "/partners" as const, label: t("partners"), uppercase: true },
-    { href: "/contact" as const, label: t("contact"), uppercase: true },
+    { href: "/faq" as const, label: t("faq") },
+    { href: "/partners" as const, label: t("partners") },
+    { href: "/contact" as const, label: t("contact") },
   ]
 
   return (
@@ -67,15 +73,9 @@ export const Navbar = () => {
 
         {/* Desktop nav links */}
         <ul className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8">
-          {links.map(({ href, label, uppercase }) => (
+          {links.map(({ href, label }) => (
             <li key={href}>
-              <Link
-                href={href}
-                className={cn(
-                  "text-lg font-semibold text-[#C8102E]/70 transition-colors hover:text-[#C8102E]",
-                  uppercase && "uppercase",
-                )}
-              >
+              <Link href={href} className={LINK}>
                 {label}
               </Link>
             </li>
@@ -139,15 +139,12 @@ export const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-[#F5A623] border-t border-[#C8102E]/20 px-8 pb-6">
           <ul className="flex flex-col gap-4 pt-4">
-            {links.map(({ href, label, uppercase }) => (
+            {links.map(({ href, label }) => (
               <li key={href}>
                 <Link
                   href={href}
                   onClick={() => setMenuOpen(false)}
-                  className={cn(
-                    "block text-lg font-semibold text-[#C8102E]/70 transition-colors hover:text-[#C8102E]",
-                    uppercase && "uppercase",
-                  )}
+                  className={`${LINK} block`}
                 >
                   {label}
                 </Link>

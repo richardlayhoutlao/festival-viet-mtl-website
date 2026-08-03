@@ -10,11 +10,8 @@
     "applyVendor": "Đăng ký quán ăn"
   },
   "footer": {
-    "tagline": "Tôn vinh văn hóa, ẩm thực và cộng đồng Việt Nam tại trung tâm Montréal.",
     "festival": "Lễ hội",
     "connect": "Kết nối",
-    "contact": "Liên hệ",
-    "partners": "Đối tác",
     "copyright": "Bản quyền được bảo lưu."
   },
   "home": {
@@ -53,7 +50,6 @@
     "transit2": "Đi bộ khoảng 15 phút từ ga Côte-des-Neiges trên tuyến xanh.",
     "transit3": "Các tuyến xe buýt 92 (Jean-Talon), 124 (Victoria) và 165 (Côte-des-Neiges) dừng cách một block.",
     "generalInfoTitle": "Thông tin chung",
-    "locationLabel": "Địa điểm",
     "locationAddress": "Jean-Talon O, Montréal, QC H3R 2M2",
     "feeLabel": "Phí vào cửa",
     "feeValue": "Miễn phí",
