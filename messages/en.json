@@ -10,11 +10,8 @@
     "applyVendor": "Apply as food vendor"
   },
   "footer": {
-    "tagline": "Celebrating Vietnamese culture, cuisine, and community in the heart of Montreal.",
     "festival": "Festival",
     "connect": "Connect",
-    "contact": "Contact",
-    "partners": "Partners",
     "copyright": "All rights reserved."
   },
   "home": {
@@ -53,7 +50,6 @@
     "transit2": "About a 15-minute walk from Côte-des-Neiges station on the blue line.",
     "transit3": "Bus routes 92 (Jean-Talon), 124 (Victoria), and 165 (Côte-des-Neiges) stop just a block away.",
     "generalInfoTitle": "General Information",
-    "locationLabel": "Location",
     "locationAddress": "Jean-Talon O, Montréal, QC H3R 2M2",
     "feeLabel": "Fee",
     "feeValue": "Free",

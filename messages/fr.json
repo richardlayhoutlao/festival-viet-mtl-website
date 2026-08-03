@@ -10,11 +10,8 @@
     "applyVendor": "Devenir restaurateur"
   },
   "footer": {
-    "tagline": "Célébrons la culture, la cuisine et la communauté vietnamiennes au cœur de Montréal.",
     "festival": "Festival",
     "connect": "Nous joindre",
-    "contact": "Contact",
-    "partners": "Partenaires",
     "copyright": "Tous droits réservés."
   },
   "home": {
@@ -53,7 +50,6 @@
     "transit2": "À environ 15 minutes à pied de la station Côte-des-Neiges sur la ligne bleue.",
     "transit3": "Les lignes d'autobus 92 (Jean-Talon), 124 (Victoria) et 165 (Côte-des-Neiges) s'arrêtent à un pâté de maisons.",
     "generalInfoTitle": "Informations générales",
-    "locationLabel": "Lieu",
     "locationAddress": "Jean-Talon O, Montréal, QC H3R 2M2",
     "feeLabel": "Entrée",
     "feeValue": "Gratuit",

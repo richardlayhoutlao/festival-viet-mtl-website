@@ -1,6 +1,7 @@
 import type { SVGProps } from "react"
 import { useTranslations } from "next-intl"
 import { Mail } from "lucide-react"
+import { EMAIL, FACEBOOK_URL, INSTAGRAM_URL } from "@/lib/site"
 
 // lucide-react v1 dropped its brand icons, so the two social marks are inlined.
 // They carry lucide's own geometry and stroke settings on purpose — a filled
@@ -28,26 +29,15 @@ const InstagramIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-const EMAIL = "info@festivietvietmtl.ca"
-
 const socials = [
-  {
-    label: "Facebook",
-    href: "https://www.facebook.com/profile.php?id=100027689933508",
-    Icon: FacebookIcon,
-  },
-  {
-    // No ?hl=en — that param is a copy-paste artifact from the browser and
-    // would pin Instagram to English for visitors reading the site in fr or vi.
-    label: "Instagram",
-    href: "https://www.instagram.com/festivalvietmtl/",
-    Icon: InstagramIcon,
-  },
+  { label: "Facebook", href: FACEBOOK_URL, Icon: FacebookIcon },
+  { label: "Instagram", href: INSTAGRAM_URL, Icon: InstagramIcon },
 ]
 
 // One clock and one curve for everything that moves, so the whole card lands
 // together. The curve is the same expo-out the FAQ accordion uses.
-const HOVER_EASE = "duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none"
+const HOVER_EASE =
+  "duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none"
 
 // The <a> stays put and the card inside it is what lifts. If the hovered
 // element moved itself, a pointer near the bottom edge would fall out of the
@@ -69,7 +59,9 @@ const ContactPage = () => {
           <h1 className="mb-6 text-[clamp(2.6rem,7vw,6rem)] leading-[0.9] font-black tracking-[-0.03em] text-white">
             {t("title")}
           </h1>
-          <p className="max-w-[600px] text-lg leading-[1.55] text-white/90">{t("subtitle")}</p>
+          <p className="max-w-[600px] text-lg leading-[1.55] text-white/90">
+            {t("subtitle")}
+          </p>
         </div>
       </header>
 
@@ -93,7 +85,10 @@ const ContactPage = () => {
             <div
               className={`${CARD} items-center justify-center gap-6 bg-[#F5A623] p-6 text-[#C8102E] transition-[transform,background-color,color] group-hover:bg-[#C8102E] group-hover:text-[#F5A623] sm:gap-8 sm:p-10`}
             >
-              <Mail aria-hidden="true" className="hidden size-12 flex-none sm:block" />
+              <Mail
+                aria-hidden="true"
+                className="hidden size-12 flex-none sm:block"
+              />
               <span className="text-center text-[clamp(1rem,4.5vw,3rem)] leading-[1.05] font-black tracking-[-0.03em] wrap-break-word">
                 {EMAIL}
               </span>
