@@ -1,69 +1,62 @@
+import Image from "next/image"
 import { useTranslations } from "next-intl"
 
 const sponsors = [
-  { tier: "Gold Sponsors", names: ["Sponsor Name A", "Sponsor Name B"] },
-  { tier: "Silver Sponsors", names: ["Sponsor Name C", "Sponsor Name D", "Sponsor Name E"] },
-  { tier: "Community Partners", names: ["Partner Organization F", "Partner Organization G"] },
-]
-
-const volunteers = [
-  "Volunteer Name 1",
-  "Volunteer Name 2",
-  "Volunteer Name 3",
-  "Volunteer Name 4",
-  "Volunteer Name 5",
-  "Volunteer Name 6",
+  {
+    name: "Canadian Heritage / Patrimoine canadien",
+    src: "/sponsors/canadian-heritage.png",
+    width: 630,
+    height: 145,
+  },
 ]
 
 const PartnersPage = () => {
   const t = useTranslations("partners")
 
   return (
-    <div className="flex min-h-svh flex-col items-center px-6 py-12">
-      <div className="w-full max-w-2xl">
-        <h1 className="mb-2 text-3xl font-bold tracking-tight">{t("title")}</h1>
-        <p className="mb-10 text-sm leading-relaxed text-muted-foreground">{t("subtitle")}</p>
-
-        <div className="flex flex-col gap-10">
-          {sponsors.map(({ tier, names }) => (
-            <section key={tier}>
-              <h2 className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                {tier}
-              </h2>
-              <ul className="flex flex-col gap-2">
-                {names.map((name) => (
-                  <li key={name} className="rounded-md border px-4 py-3 text-sm font-medium">
-                    {name}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ))}
-
-          <section>
-            <h2 className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-              {t("volunteers")}
-            </h2>
-            <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-              {volunteers.map((name) => (
-                <li
-                  key={name}
-                  className="rounded-md border px-3 py-2 text-center text-sm text-muted-foreground"
-                >
-                  {name}
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-              {t("gratitude")}
-            </h2>
-            <p className="text-sm leading-relaxed text-muted-foreground">{t("gratitudeText")}</p>
-          </section>
+    <div className="bg-[#FAF7F2]">
+      {/* Masthead — flat red field behind the type, matching the FAQ page */}
+      <header className="bg-[#C8102E] px-8 pt-30 pb-20">
+        <div className="mx-auto max-w-[1100px]">
+          <span className="mb-5 block text-[10px] font-bold tracking-[0.3em] text-[#F5A623] uppercase">
+            {t("eyebrow")}
+          </span>
+          <h1 className="mb-6 text-[clamp(2.6rem,7vw,6rem)] leading-[0.9] font-black tracking-[-0.03em] text-white">
+            {t("title")}
+          </h1>
+          <p className="max-w-[600px] text-lg leading-[1.55] text-white/90">{t("subtitle")}</p>
         </div>
-      </div>
+      </header>
+
+      {/* Sponsor wall. Plates are white because sponsor marks are supplied for
+          neutral grounds — the Canada wordmark carries its own red, which goes
+          muddy on marigold.
+
+          Wrapping flex rather than a grid, because a grid's tracks stay put
+          whether or not they are filled — a lone plate would sit hard against
+          the left edge. Capped-width plates in a centred row keep any number
+          of sponsors balanced under the masthead, and the fixed ratio holds
+          the wall's geometry as more are added. */}
+      <section className="px-8 pt-20 pb-[110px]">
+        <div className="mx-auto max-w-[1100px]">
+          <ul className="flex flex-wrap justify-center gap-5">
+            {sponsors.map(({ name, src, width, height }) => (
+              <li
+                key={name}
+                className="flex aspect-[16/7] w-full max-w-[420px] items-center justify-center rounded-sm bg-white p-6 sm:p-8"
+              >
+                <Image
+                  src={src}
+                  width={width}
+                  height={height}
+                  alt={name}
+                  className="h-auto max-h-full w-full object-contain"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </div>
   )
 }
