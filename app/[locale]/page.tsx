@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { HeroSection } from "@/components/common/HeroSection"
 import { BackgroundVideo } from "@/components/common/BackgroundVideo"
@@ -42,11 +43,15 @@ const Page = () => {
       <section className="flex min-h-[calc(100svh-7rem)] items-stretch bg-[#FAF7F2] px-8 py-24 md:py-32">
         <div className="mx-auto grid w-full max-w-[1600px] items-stretch gap-12 md:grid-cols-2 md:gap-20">
 
-          {/* Image */}
-          <div className="order-1 flex">
-            <div className="flex min-h-[60vh] w-full items-center justify-center rounded-sm bg-[#C8102E] text-xs font-bold uppercase tracking-[0.25em] text-[#F5A623] md:min-h-0">
-              [Image placeholder]
-            </div>
+          {/* Illustration — hand-drawn Vietnamese food & folklore, transparent background */}
+          <div className="order-1 flex items-center justify-center">
+            <Image
+              src="/heritage-illustration.png"
+              width={707}
+              height={711}
+              alt="Illustration de plats vietnamiens : phở, bánh mì et café glacé accompagnés de dragons et d'un tigre"
+              className="h-auto w-full max-w-130"
+            />
           </div>
 
           {/* Copy */}
@@ -61,7 +66,7 @@ const Page = () => {
               {t("traditionBody1")}
             </p>
             <p className="mt-6 text-lg font-semibold leading-relaxed text-[#C8102E] md:text-xl">
-              {t("traditionBody2")} 🍜🥖🥤
+              {t("traditionBody2")}
             </p>
           </div>
         </div>
