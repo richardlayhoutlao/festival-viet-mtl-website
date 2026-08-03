@@ -69,7 +69,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=100027689933508"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   Facebook
@@ -77,7 +77,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/festivalvietmtl/"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   Instagram

@@ -1,6 +1,14 @@
+import Image from "next/image"
 import { useTranslations } from "next-intl"
 
-const sponsors = ["Sponsor Name A", "Sponsor Name B"]
+const sponsors = [
+  {
+    name: "Canadian Heritage / Patrimoine canadien",
+    src: "/sponsors/canadian-heritage.png",
+    width: 630,
+    height: 145,
+  },
+]
 
 const PartnersPage = () => {
   const t = useTranslations("partners")
@@ -20,26 +28,30 @@ const PartnersPage = () => {
         </div>
       </header>
 
-      {/* Sponsor wall. The label stays at eyebrow scale so the sponsors
-          themselves are the largest thing in the band.
+      {/* Sponsor wall. Plates are white because sponsor marks are supplied for
+          neutral grounds — the Canada wordmark carries its own red, which goes
+          muddy on marigold.
 
-          Fixed-ratio plates on purpose: they are logo slots, so real sponsor
-          artwork drops in later without the wall reflowing. Marigold fill
-          rather than an outline — gold tier taking the brand's gold. */}
+          Wrapping flex rather than a grid, because a grid's tracks stay put
+          whether or not they are filled — a lone plate would sit hard against
+          the left edge. Capped-width plates in a centred row keep any number
+          of sponsors balanced under the masthead, and the fixed ratio holds
+          the wall's geometry as more are added. */}
       <section className="px-8 pt-20 pb-[110px]">
         <div className="mx-auto max-w-[1100px]">
-          <h2 className="mb-6 text-[11px] font-bold tracking-[0.28em] text-[#C8102E] uppercase">
-            {t("sponsors")}
-          </h2>
-          <ul className="grid gap-5 sm:grid-cols-2">
-            {sponsors.map((name) => (
+          <ul className="flex flex-wrap justify-center gap-5">
+            {sponsors.map(({ name, src, width, height }) => (
               <li
                 key={name}
-                className="flex aspect-[16/7] items-center justify-center rounded-sm bg-[#F5A623] px-8 text-center"
+                className="flex aspect-[16/7] w-full max-w-[420px] items-center justify-center rounded-sm bg-white p-6 sm:p-8"
               >
-                <span className="text-[clamp(1.35rem,3vw,2rem)] leading-[1.1] font-black tracking-[-0.02em] text-[#C8102E]">
-                  {name}
-                </span>
+                <Image
+                  src={src}
+                  width={width}
+                  height={height}
+                  alt={name}
+                  className="h-auto max-h-full w-full object-contain"
+                />
               </li>
             ))}
           </ul>
