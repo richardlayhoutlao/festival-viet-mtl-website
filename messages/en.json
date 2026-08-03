@@ -126,8 +126,10 @@
     "ctaLink": "Contact us"
   },
   "partners": {
+    "eyebrow": "Made possible by",
     "title": "Partners",
     "subtitle": "This festival would not be possible without the generous support of our sponsors, partners, and dedicated volunteers. We extend our heartfelt gratitude to everyone who made this celebration possible.",
+    "sponsors": "Sponsors",
     "volunteers": "Volunteers",
     "gratitude": "A Note of Gratitude",
     "gratitudeText": "We also thank the City of Montreal, the Vietnamese community organizations, and every attendee who joins us in celebrating Vietnamese culture and heritage. Your presence makes this festival a success year after year."
