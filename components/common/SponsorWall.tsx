@@ -25,7 +25,7 @@ export const SponsorWall = () => (
     {sponsors.map(({ name, src, width, height }) => (
       <li
         key={name}
-        className="flex aspect-[16/7] w-full max-w-[420px] items-center justify-center rounded-sm bg-white p-6 sm:p-8"
+        className="flex aspect-[16/7] w-full max-w-[420px] items-center justify-center rounded-3xl bg-white p-6 sm:p-8"
       >
         <Image
           src={src}

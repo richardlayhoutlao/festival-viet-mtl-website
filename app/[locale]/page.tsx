@@ -129,7 +129,7 @@ const Page = () => {
             {participantCards.map(({ title, desc, image, href, cta }) => (
               <article
                 key={title}
-                className="flex flex-col overflow-hidden rounded-sm bg-[#FAF7F2]"
+                className="flex flex-col overflow-hidden rounded-3xl bg-[#FAF7F2]"
               >
                 {/* Empty alt — the card title right below already names the image */}
                 <div className="relative aspect-4/3 bg-[#F5A623]">
@@ -166,7 +166,7 @@ const Page = () => {
       </section>
 
       {/* Event details — the practical band. Marigold field with soft white
-          bento cards on top; the fee tile flips to red so "Free" is the
+          bento cards on top; "Free" keeps the largest type so it stays the
           loudest fact in the section. Metro items keep white-ringed dots in
           each line's colour, the way stations are drawn on the STM map. */}
       <section className="bg-[#F5A623] px-8 py-24 md:py-32">
@@ -215,7 +215,7 @@ const Page = () => {
               </div>
             </div>
 
-            {/* General information — stacked tiles; fee flips to red */}
+            {/* General information — stacked white tiles */}
             <div className="flex flex-col gap-6 md:col-span-2 md:gap-8">
               <h3 className="text-xs font-bold uppercase tracking-[0.25em] text-[#111]/70">
                 {t("generalInfoTitle")}
@@ -223,10 +223,10 @@ const Page = () => {
 
               <dl className="flex flex-col gap-6 md:gap-8">
                 <div className="rounded-3xl bg-white p-8 shadow-[0_24px_48px_-24px_rgba(17,17,17,0.35)] md:p-10">
-                  <dt className="w-fit rounded-full bg-[#C8102E]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#C8102E]">
+                  <dt className="w-fit rounded-full bg-[#111]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#4A4A4A]">
                     {t("locationLabel")}
                   </dt>
-                  <dd className="mt-5 text-2xl font-black tracking-tight text-[#111]">
+                  <dd className="mt-5 text-xl font-black tracking-tight text-[#111]">
                     {t("locationValue")}
                     <span className="mt-2 block text-base font-normal tracking-normal text-[#333]">
                       {t("locationAddress")}
@@ -234,17 +234,17 @@ const Page = () => {
                   </dd>
                 </div>
 
-                <div className="rounded-3xl bg-[#C8102E] p-8 shadow-[0_24px_48px_-24px_rgba(17,17,17,0.35)] md:p-10">
-                  <dt className="w-fit rounded-full bg-white/15 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-white">
+                <div className="rounded-3xl bg-white p-8 shadow-[0_24px_48px_-24px_rgba(17,17,17,0.35)] md:p-10">
+                  <dt className="w-fit rounded-full bg-[#111]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#4A4A4A]">
                     {t("feeLabel")}
                   </dt>
-                  <dd className="mt-5 text-4xl font-black tracking-tight text-white">
+                  <dd className="mt-5 text-xl font-black tracking-tight text-[#111]">
                     {t("feeValue")}
                   </dd>
                 </div>
 
                 <div className="rounded-3xl bg-white p-8 shadow-[0_24px_48px_-24px_rgba(17,17,17,0.35)] md:p-10">
-                  <dt className="w-fit rounded-full bg-[#C8102E]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#C8102E]">
+                  <dt className="w-fit rounded-full bg-[#111]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#4A4A4A]">
                     {t("scheduleLabel")}
                   </dt>
                   <dd className="mt-5 text-xl font-black tracking-tight text-[#111]">

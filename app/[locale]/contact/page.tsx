@@ -39,11 +39,8 @@ const socials = [
 const HOVER_EASE =
   "duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none"
 
-// The <a> stays put and the card inside it is what lifts. If the hovered
-// element moved itself, a pointer near the bottom edge would fall out of the
-// box mid-transition and the hover would oscillate.
-const HIT_AREA = "group block rounded-sm focus-visible:outline-none"
-const CARD = `flex h-full transform-gpu rounded-sm group-hover:-translate-y-1 motion-reduce:group-hover:translate-y-0 group-focus-visible:outline-2 group-focus-visible:outline-offset-4 group-focus-visible:outline-[#C8102E] ${HOVER_EASE}`
+const HIT_AREA = "group block rounded-3xl focus-visible:outline-none"
+const CARD = `flex h-full rounded-3xl group-focus-visible:outline-2 group-focus-visible:outline-offset-4 group-focus-visible:outline-[#C8102E] ${HOVER_EASE}`
 
 const ContactPage = () => {
   const t = useTranslations("contact")
@@ -83,7 +80,7 @@ const ContactPage = () => {
               together through currentColor on a single transition. */}
           <a href={`mailto:${EMAIL}`} className={HIT_AREA}>
             <div
-              className={`${CARD} items-center justify-center gap-6 bg-[#F5A623] p-6 text-[#C8102E] transition-[transform,background-color,color] group-hover:bg-[#C8102E] group-hover:text-[#F5A623] sm:gap-8 sm:p-10`}
+              className={`${CARD} items-center justify-center gap-6 bg-[#F5A623] p-6 text-[#C8102E] transition-colors group-hover:bg-[#C8102E] group-hover:text-[#F5A623] sm:gap-8 sm:p-10`}
             >
               <Mail
                 aria-hidden="true"
@@ -113,7 +110,7 @@ const ContactPage = () => {
               <li key={label}>
                 <a href={href} aria-label={label} className={HIT_AREA}>
                   <div
-                    className={`${CARD} min-h-[220px] items-center justify-center bg-[#F5A623] p-7 text-[#C8102E] transition-[transform,background-color,color] group-hover:bg-[#C8102E] group-hover:text-[#F5A623]`}
+                    className={`${CARD} min-h-[220px] items-center justify-center bg-[#F5A623] p-7 text-[#C8102E] transition-colors group-hover:bg-[#C8102E] group-hover:text-[#F5A623]`}
                   >
                     <Icon aria-hidden="true" className="size-16 flex-none" />
                   </div>
