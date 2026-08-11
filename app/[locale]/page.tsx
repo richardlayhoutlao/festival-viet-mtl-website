@@ -147,15 +147,9 @@ const Page = () => {
                   {href && cta && (
                     <Link
                       href={href}
-                      className="group mt-auto inline-flex items-center gap-2 self-start pt-6 text-xs font-bold uppercase tracking-[0.12em] text-[#C8102E] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C8102E]"
+                      className="mt-auto inline-flex items-center self-start pt-6 text-xs font-bold uppercase tracking-[0.12em] text-[#C8102E] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C8102E]"
                     >
                       {cta}
-                      <span
-                        aria-hidden="true"
-                        className="transition-transform duration-200 group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
-                      >
-                        →
-                      </span>
                     </Link>
                   )}
                 </div>
