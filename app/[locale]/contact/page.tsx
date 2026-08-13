@@ -51,7 +51,7 @@ const ContactPage = () => {
   return (
     <div className="bg-[#FAF7F2]">
       {/* Masthead — flat red field behind the type, matching the FAQ page */}
-      <header className="bg-[#C8102E] px-8 pt-30 pb-20">
+      <header className="bg-[#C8102E] px-5 pt-16 pb-14 md:px-8 md:pt-30 md:pb-20">
         <div className="mx-auto max-w-[1100px]">
           <span className="mb-5 block text-[10px] font-bold tracking-[0.3em] text-[#F5A623] uppercase">
             {t("eyebrow")}
@@ -65,7 +65,7 @@ const ContactPage = () => {
         </div>
       </header>
 
-      <section className="px-8 pt-20 pb-[110px]">
+      <section className="px-5 pt-12 pb-20 md:px-8 md:pt-20 md:pb-27.5">
         <div className="mx-auto flex max-w-[1100px] flex-col gap-5">
           {/* Primary contact. The address is set as display type — it is the
               one thing a visitor actually needs, so it gets the full width and
@@ -113,7 +113,7 @@ const ContactPage = () => {
               <li key={label}>
                 <a href={href} aria-label={label} className={HIT_AREA}>
                   <div
-                    className={`${CARD} min-h-[220px] items-center justify-center bg-[#F5A623] p-7 text-[#C8102E] transition-colors group-hover:bg-[#C8102E] group-hover:text-[#F5A623]`}
+                    className={`${CARD} min-h-36 items-center justify-center bg-[#F5A623] p-7 text-[#C8102E] transition-colors group-hover:bg-[#C8102E] group-hover:text-[#F5A623] sm:min-h-55`}
                   >
                     <Icon aria-hidden="true" className="size-16 flex-none" />
                   </div>

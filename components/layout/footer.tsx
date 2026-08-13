@@ -33,7 +33,7 @@ export const Footer = () => {
           than living only on the home page. Marigold field with the hero's own
           rule-and-label device, so the band reads as a piece of the hero
           returning, not as a new component. */}
-      <div className="bg-[#F5A623] px-8 py-9">
+      <div className="bg-[#F5A623] px-5 py-9 md:px-8">
         <div className="mx-auto flex max-w-[1600px] flex-col gap-6 md:flex-row md:items-center md:justify-between md:gap-10">
           <dl className="flex flex-col flex-wrap gap-x-12 gap-y-5 sm:flex-row">
             {vitals.map(({ label, value }) => (
@@ -55,7 +55,7 @@ export const Footer = () => {
       {/* Closing slab. The site opens on a marigold field and the interior
           pages open on a red one; the page ends on red so the whole document
           is bracketed in the two brand colours. */}
-      <div className="bg-[#C8102E] px-8 pt-16 pb-14">
+      <div className="bg-[#C8102E] px-5 pt-14 pb-12 md:px-8 md:pt-16 md:pb-14">
         <div className="mx-auto max-w-[1600px]">
           <div className="flex flex-col gap-10 sm:flex-row sm:items-center sm:justify-between">
             {/* The navbar's lockup, mark and all, with the colours swapped:

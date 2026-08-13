@@ -104,7 +104,7 @@ const Page = () => {
       <HeroSection />
 
       {/* Explore — first editorial beat under the hero, background video */}
-      <section className="relative isolate flex min-h-[calc(100svh-7rem)] items-center overflow-hidden bg-linear-to-br from-[#C8102E] to-[#7a0a1d] px-8 py-32 md:py-48">
+      <section className="relative isolate flex min-h-[calc(100svh-7rem)] items-center overflow-hidden bg-linear-to-br from-[#C8102E] to-[#7a0a1d] px-5 py-24 md:px-8 md:py-48">
         {/* Background YouTube video — muted autoplay loop, scaled to cover the section.
             Uses the IFrame API (client component) to auto-resume so YouTube's
             paused-overlay controls never appear. */}
@@ -133,7 +133,7 @@ const Page = () => {
       </section>
 
       {/* Tradition — mirrored editorial beat, image on the left */}
-      <section className="flex min-h-[calc(100svh-7rem)] items-stretch bg-[#FAF7F2] px-8 py-24 md:py-32">
+      <section className="flex min-h-[calc(100svh-7rem)] items-stretch bg-[#FAF7F2] px-5 py-20 md:px-8 md:py-32">
         <div className="mx-auto grid w-full max-w-[1600px] items-stretch gap-12 md:grid-cols-2 md:gap-20">
 
           {/* Illustration — hand-drawn Vietnamese food & folklore, transparent background */}
@@ -152,7 +152,10 @@ const Page = () => {
             <span className="mb-8 block text-[10px] font-bold uppercase tracking-[0.3em] text-[#C8102E]">
               {t("traditionEyebrow")}
             </span>
-            <h2 className="whitespace-nowrap font-black leading-[0.92] tracking-tight text-[#111] text-[clamp(1.1rem,2.2vw,2.25rem)]">
+            {/* Nowrap keeps the line intact beside the illustration at md+;
+                below that the title wraps and takes a fixed readable size —
+                the clamp's floor is smaller than the body text. */}
+            <h2 className="font-black leading-[1.05] tracking-tight text-[#111] text-3xl md:whitespace-nowrap md:leading-[0.92] md:text-[clamp(1.1rem,2.2vw,2.25rem)]">
               {t("traditionTitle")}
             </h2>
             <p className="mt-8 border-l-2 border-[#F5A623] pl-5 text-lg leading-relaxed text-[#333] md:text-xl">
@@ -167,7 +170,7 @@ const Page = () => {
 
       {/* Participants — red field, one cream card per group; the two groups
           with their own pages link out, merchants doesn't have one yet */}
-      <section className="bg-[#C8102E] px-8 py-24 md:py-32">
+      <section className="bg-[#C8102E] px-5 py-20 md:px-8 md:py-32">
         <div className="mx-auto w-full max-w-[1600px]">
           <span className="mb-8 block text-[10px] font-bold uppercase tracking-[0.3em] text-[#F5A623]">
             {t("participantsEyebrow")}
@@ -217,7 +220,7 @@ const Page = () => {
           bento cards on top; "Free" keeps the largest type so it stays the
           loudest fact in the section. Metro items keep white-ringed dots in
           each line's colour, the way stations are drawn on the STM map. */}
-      <section className="bg-[#F5A623] px-8 py-24 md:py-32">
+      <section className="bg-[#F5A623] px-5 py-20 md:px-8 md:py-32">
         <div className="mx-auto w-full max-w-[1600px]">
           <h2 className="font-black leading-[0.92] tracking-tight text-[#111] text-[clamp(1.75rem,3.5vw,3rem)]">
             {t("eventDetailsTitle")}
@@ -307,7 +310,7 @@ const Page = () => {
 
       {/* Partners — same sponsor wall as the partners page, framed with the
           landing page's editorial header. */}
-      <section className="bg-[#FAF7F2] px-8 py-24 md:py-32">
+      <section className="bg-[#FAF7F2] px-5 py-20 md:px-8 md:py-32">
         <div className="mx-auto w-full max-w-[1600px]">
           <h2 className="text-center font-black leading-[0.92] tracking-tight text-[#111] text-[clamp(1.75rem,3.5vw,3rem)]">
             {t("partnersTitle")}

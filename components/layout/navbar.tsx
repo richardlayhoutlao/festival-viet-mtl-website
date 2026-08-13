@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl"
 import { Link, usePathname } from "@/i18n/navigation"
 import { LocaleSwitcher } from "@/components/common/LocaleSwitcher"
 import VietFestLogo from "@/components/common/VietFestLogo"
+import { VOLUNTEER_FORM_URL } from "@/lib/site"
 import { cn } from "@/utils/cn"
 
 // The same treatment as the footer's link row — uppercase, tracked, with the
@@ -24,20 +25,20 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   // Enlarge the logo and hide the wordmark while the hero — which repeats the
-  // full festival name — is in view. Pages without a hero keep the compact
-  // state. Re-runs on navigation so the observer re-attaches to the new page's
-  // hero instead of a stale node.
-  const [overHero, setOverHero] = useState(false)
+  // full festival name — is in view. Re-runs on navigation so the observer
+  // re-attaches to the new page's hero instead of a stale node. Only the home
+  // page renders a hero, so the flag is gated on the pathname rather than
+  // reset from the effect — the observer fires immediately on attach, which
+  // refreshes any stale value when navigating back home.
+  const [heroIntersecting, setHeroIntersecting] = useState(false)
+  const overHero = heroIntersecting && pathname === "/"
 
   useEffect(() => {
     const hero = document.getElementById("hero")
-    if (!hero) {
-      setOverHero(false)
-      return
-    }
+    if (!hero) return
 
     const observer = new IntersectionObserver(
-      ([entry]) => setOverHero(entry.isIntersecting),
+      ([entry]) => setHeroIntersecting(entry.isIntersecting),
       { threshold: 0 },
     )
     observer.observe(hero)
@@ -63,9 +64,14 @@ export const Navbar = () => {
       <div className="bg-[#C8102E] px-4 md:px-8">
         <div className="mx-auto flex max-w-[1600px] items-center justify-center py-2 md:justify-end">
           <div className="flex flex-wrap items-center justify-center gap-3 md:gap-5">
-            <Link href="/contact" className={STRIP_LINK}>
+            <a
+              href={VOLUNTEER_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={STRIP_LINK}
+            >
               {t("applyVolunteer")}
-            </Link>
+            </a>
             <span aria-hidden="true" className="h-3 w-px bg-[#F5A623]/40 md:h-3.5" />
             <Link href="/food-vendors" className={STRIP_LINK}>
               {t("applyVendor")}
@@ -74,28 +80,30 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <div className="bg-[#F5A623] px-8">
+      <div className="bg-[#F5A623] px-4 md:px-8">
         <nav className="relative mx-auto flex max-w-[1600px] items-center justify-between py-2">
           {/* Logo — shrinks a bit while over the hero, full size once scrolled
-              past. Wordmark appears once the hero's title is out of view. */}
-          <Link href="/" className="flex items-center gap-2 -ml-6">
+              past. Wordmark appears once the hero's title is out of view.
+              The whole lockup steps down below md so logo + wordmark + locale
+              switcher + hamburger fit a 360px screen without overflowing. */}
+          <Link href="/" className="flex items-center gap-1.5 -ml-3 md:gap-2 md:-ml-6">
             <VietFestLogo
               color="#C8102E"
               className={cn(
                 "w-auto transition-[height] duration-300",
-                overHero ? "h-28" : "h-24",
+                overHero ? "h-20 md:h-28" : "h-16 md:h-24",
               )}
             />
             <span
               className={cn(
-                "flex flex-col font-black leading-none tracking-tight text-[#C8102E] text-2xl transition-opacity duration-300",
+                "flex flex-col font-black leading-none tracking-tight text-[#C8102E] text-lg md:text-2xl transition-opacity duration-300",
                 overHero ? "pointer-events-none opacity-0" : "opacity-100",
               )}
               aria-hidden={overHero}
             >
               <span>Festival</span>
-              <span className="-mt-1.5">Việt</span>
-              <span className="-mt-1.5">Montréal</span>
+              <span className="-mt-1 md:-mt-1.5">Việt</span>
+              <span className="-mt-1 md:-mt-1.5">Montréal</span>
             </span>
           </Link>
 
@@ -142,7 +150,7 @@ export const Navbar = () => {
 
         {/* Mobile dropdown menu */}
         {menuOpen && (
-          <div className="lg:hidden bg-[#F5A623] border-t border-[#C8102E]/20 px-8 pb-6">
+          <div className="lg:hidden bg-[#F5A623] border-t border-[#C8102E]/20 px-4 pb-6">
             <ul className="flex flex-col gap-4 pt-4">
               {links.map(({ href, label }) => (
                 <li key={href}>
@@ -157,13 +165,15 @@ export const Navbar = () => {
               ))}
             </ul>
             <div className="flex flex-col gap-3 mt-5">
-              <Link
-                href="/contact"
+              <a
+                href={VOLUNTEER_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
                 className="rounded-full bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold uppercase text-[#F5A623] transition-colors hover:bg-[#a50d26]"
               >
                 {t("applyVolunteer")}
-              </Link>
+              </a>
               <Link
                 href="/food-vendors"
                 onClick={() => setMenuOpen(false)}
