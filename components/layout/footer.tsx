@@ -71,7 +71,7 @@ export const Footer = () => {
                 follows it. The line box there is 32px, so it is 32px here. */}
             <Link
               href="/"
-              className="-ml-6 flex items-center gap-2 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              className="-ml-6 flex items-center gap-2 rounded-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >
               <VietFestLogo
                 aria-hidden="true"

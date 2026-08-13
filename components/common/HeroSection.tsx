@@ -1,7 +1,6 @@
 "use client"
 
 import { useTranslations } from "next-intl"
-import { Link } from "@/i18n/navigation"
 
 export const HeroSection = () => {
   const t = useTranslations("home")
@@ -65,27 +64,6 @@ export const HeroSection = () => {
                 </dd>
               </div>
             </dl>
-
-            {/* Divider */}
-            <div className="h-px bg-[#C8102E]/20" />
-
-            {/* CTAs */}
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-2">
-                <Link
-                  href="/contact"
-                  className="flex-1 rounded-sm bg-[#C8102E] px-6 py-5 text-center text-xl font-bold uppercase text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
-                >
-                  {t("volunteerLink")}
-                </Link>
-                <Link
-                  href="/food-vendors"
-                  className="flex-1 rounded-sm bg-[#C8102E] px-6 py-5 text-center text-xl font-bold uppercase text-[#F5A623] transition-colors hover:bg-[#a50d26] whitespace-nowrap"
-                >
-                  {t("foodVendorLink")}
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </div>
