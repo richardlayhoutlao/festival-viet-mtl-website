@@ -17,3 +17,8 @@ export const FACEBOOK_URL =
 // No ?hl=en — that param is a copy-paste artifact from the browser and would
 // pin Instagram to English for visitors reading the site in fr or vi.
 export const INSTAGRAM_URL = "https://www.instagram.com/festivalvietmtl/"
+
+// Volunteer application Google Form, linked from the navbar's apply strip
+// and mobile menu.
+export const VOLUNTEER_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeiV0cMlTlwQ7glCzFZy_oq70idA6MQPJF50LkDmpZ1GA0ecg/viewform"

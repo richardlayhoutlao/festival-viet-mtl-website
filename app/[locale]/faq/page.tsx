@@ -12,7 +12,7 @@ const FAQPage = () => {
   return (
     <div className="bg-[#FAF7F2]">
       {/* Masthead — flat red field behind the type */}
-      <header className="bg-[#C8102E] px-8 pt-30 pb-20">
+      <header className="bg-[#C8102E] px-5 pt-16 pb-14 md:px-8 md:pt-30 md:pb-20">
         <div className="mx-auto max-w-[1100px]">
           <span className="mb-5 block text-[10px] font-bold tracking-[0.3em] text-[#F5A623] uppercase">
             {t("eyebrow")}
@@ -27,7 +27,7 @@ const FAQPage = () => {
       </header>
 
       {/* Accordion — red hairlines between entries, one panel open at a time */}
-      <section className="px-8 pt-20 pb-[110px]">
+      <section className="px-5 pt-12 pb-20 md:px-8 md:pt-20 md:pb-27.5">
         <div className="mx-auto max-w-[1100px]">
           <FaqAccordion questions={questions} />
 
