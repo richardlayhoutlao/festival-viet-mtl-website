@@ -1,31 +1,4 @@
 {
-  "metadata": {
-    "siteName": "Festival Việt Montréal",
-    "home": {
-      "title": "Festival Việt Montréal – Lễ hội ẩm thực và văn hóa Việt Nam",
-      "description": "Lễ hội ẩm thực đường phố và văn hóa Việt Nam miễn phí tại Montréal. Chủ nhật, 6 tháng 9 năm 2026, từ 11h đến 19h tại công viên Roméo-Charette — món ăn, âm nhạc, múa và truyền thống."
-    },
-    "performers": {
-      "title": "Nghệ sĩ",
-      "description": "Âm nhạc sống động, múa truyền thống, võ thuật và hơn thế nữa — khám phá các nghệ sĩ biểu diễn tại Festival Việt Montréal 2026."
-    },
-    "foodVendors": {
-      "title": "Quán ăn",
-      "description": "Khám phá ẩm thực đường phố Việt Nam chính thống từ các quán ăn địa phương tại Festival Việt Montréal — hoặc đăng ký mở quán ăn tại lễ hội."
-    },
-    "faq": {
-      "title": "Hỏi đáp",
-      "description": "Giải đáp các câu hỏi thường gặp về Festival Việt Montréal: ngày giờ, vào cửa miễn phí, hoạt động gia đình, tình nguyện, đậu xe và hơn thế nữa."
-    },
-    "partners": {
-      "title": "Đối tác",
-      "description": "Gặp gỡ các nhà tài trợ, đối tác và tình nguyện viên đã góp phần tạo nên Festival Việt Montréal."
-    },
-    "contact": {
-      "title": "Liên hệ",
-      "description": "Liên hệ với đội ngũ Festival Việt Montréal về thông tin chung, yêu cầu báo chí, đăng ký quán ăn hoặc tài trợ."
-    }
-  },
   "nav": {
     "home": "Trang chủ",
     "performers": "Nghệ sĩ",

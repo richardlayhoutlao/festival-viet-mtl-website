@@ -1,8 +1,5 @@
 import { useTranslations } from "next-intl"
 import { SponsorWall } from "@/components/common/SponsorWall"
-import { createPageMetadata } from "@/lib/seo"
-
-export const generateMetadata = createPageMetadata("/partners")
 
 const PartnersPage = () => {
   const t = useTranslations("partners")

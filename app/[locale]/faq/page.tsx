@@ -1,9 +1,6 @@
 import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/navigation"
 import { FaqAccordion } from "@/components/common/FaqAccordion"
-import { createPageMetadata } from "@/lib/seo"
-
-export const generateMetadata = createPageMetadata("/faq")
 
 const FAQPage = () => {
   const t = useTranslations("faq")

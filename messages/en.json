@@ -1,31 +1,4 @@
 {
-  "metadata": {
-    "siteName": "Festival Việt Montréal",
-    "home": {
-      "title": "Festival Việt Montréal – Vietnamese Food & Culture Festival",
-      "description": "A free Vietnamese street food and culture festival in Montreal. Sunday, September 6, 2026, 11 a.m. to 7 p.m. at Parc Roméo-Charette — food, music, dance, and tradition."
-    },
-    "performers": {
-      "title": "Performers",
-      "description": "Live music, traditional dance, martial arts, and more — discover the artists performing at Festival Việt Montréal 2026."
-    },
-    "foodVendors": {
-      "title": "Food Vendors",
-      "description": "Explore authentic Vietnamese street food from local vendors at Festival Việt Montréal — or apply to become a food vendor."
-    },
-    "faq": {
-      "title": "FAQ",
-      "description": "Answers to common questions about Festival Việt Montréal: dates, free admission, family activities, volunteering, parking, and more."
-    },
-    "partners": {
-      "title": "Partners",
-      "description": "Meet the sponsors, partners, and volunteers who make Festival Việt Montréal possible."
-    },
-    "contact": {
-      "title": "Contact",
-      "description": "Get in touch with the Festival Việt Montréal team for general inquiries, media requests, vendor applications, and sponsorships."
-    }
-  },
   "nav": {
     "home": "Home",
     "performers": "Performers",
