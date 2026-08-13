@@ -73,7 +73,7 @@ export const Navbar = () => {
               {t("applyVolunteer")}
             </a>
             <span aria-hidden="true" className="h-3 w-px bg-[#F5A623]/40 md:h-3.5" />
-            <Link href="/food-vendors" className={STRIP_LINK}>
+            <Link href="/contact" className={STRIP_LINK}>
               {t("applyVendor")}
             </Link>
           </div>
@@ -175,7 +175,7 @@ export const Navbar = () => {
                 {t("applyVolunteer")}
               </a>
               <Link
-                href="/food-vendors"
+                href="/contact"
                 onClick={() => setMenuOpen(false)}
                 className="rounded-full bg-[#C8102E] px-4 py-2.5 text-center text-lg font-semibold uppercase text-[#F5A623] transition-colors hover:bg-[#a50d26]"
               >
