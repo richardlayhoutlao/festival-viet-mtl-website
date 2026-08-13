@@ -85,9 +85,10 @@ export const Footer = () => {
               </span>
             </Link>
 
-            {/* One horizontal row, no visible heading — three links don't
+            {/* One horizontal row, no visible heading — five links don't
                 need a column label. The landmark still has to announce itself,
-                so the name moves to aria-label.
+                so the name moves to aria-label. The two participant pages
+                lead, in the navbar's order.
 
                 Uppercase and tracked, the register the site already uses for
                 uppercase type: letterspacing is what keeps caps readable at
@@ -95,6 +96,16 @@ export const Footer = () => {
                 screens. */}
             <nav aria-label={t("connect")}>
               <ul className="flex flex-wrap gap-x-8 gap-y-3 text-base font-bold tracking-[0.1em] uppercase">
+                <li>
+                  <Link href="/food-vendors" className={LINK}>
+                    {tNav("foodVendors")}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/performers" className={LINK}>
+                    {tNav("performers")}
+                  </Link>
+                </li>
                 <li>
                   <Link href="/faq" className={LINK}>
                     {tNav("faq")}

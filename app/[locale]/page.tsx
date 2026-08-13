@@ -4,10 +4,56 @@ import { Link } from "@/i18n/navigation"
 import { HeroSection } from "@/components/common/HeroSection"
 import { BackgroundVideo } from "@/components/common/BackgroundVideo"
 import { SponsorWall } from "@/components/common/SponsorWall"
+import { createPageMetadata } from "@/lib/seo"
+import { SITE_URL } from "@/lib/site"
+
+export const generateMetadata = createPageMetadata("/")
 
 const Page = () => {
   const t = useTranslations("home")
   const locale = useLocale()
+
+  // Event structured data for search engines — the festival's vitals in the
+  // format Google's event rich results read. Dates are fixed here rather than
+  // parsed out of the localized copy; update them alongside the message
+  // catalogues when the next edition is announced.
+  const eventJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Festival",
+    name: "Festival Việt Montréal 2026",
+    description: t("exploreBody1"),
+    startDate: "2026-09-06T11:00:00-04:00",
+    endDate: "2026-09-06T19:00:00-04:00",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    eventStatus: "https://schema.org/EventScheduled",
+    inLanguage: locale,
+    image: [`${SITE_URL}/VietFest_logo.jpg`],
+    location: {
+      "@type": "Place",
+      name: t("locationValue"),
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Rue Jean-Talon Ouest",
+        addressLocality: "Montréal",
+        addressRegion: "QC",
+        postalCode: "H3R 2M2",
+        addressCountry: "CA",
+      },
+    },
+    isAccessibleForFree: true,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "CAD",
+      availability: "https://schema.org/InStock",
+      url: SITE_URL,
+    },
+    organizer: {
+      "@type": "Organization",
+      name: "Festival Việt Montréal",
+      url: SITE_URL,
+    },
+  }
 
   // Marker colours follow the STM lines each item talks about; the bus item
   // gets the band's plain ink.
@@ -47,6 +93,14 @@ const Page = () => {
 
   return (
     <div>
+      {/* Escaping `<` keeps injected markup out of the script tag, per the
+          Next.js JSON-LD guidance. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(eventJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <HeroSection />
 
       {/* Explore — first editorial beat under the hero, background video */}

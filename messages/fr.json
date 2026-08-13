@@ -1,4 +1,31 @@
 {
+  "metadata": {
+    "siteName": "Festival Việt Montréal",
+    "home": {
+      "title": "Festival Việt Montréal – Festival de cuisine et de culture vietnamiennes",
+      "description": "Un festival gratuit de cuisine de rue et de culture vietnamiennes à Montréal. Dimanche 6 septembre 2026, de 11 h à 19 h au parc Roméo-Charette — bouffe, musique, danse et traditions."
+    },
+    "performers": {
+      "title": "Artistes",
+      "description": "Musique live, danse traditionnelle, arts martiaux et plus encore — découvrez les artistes du Festival Việt Montréal 2026."
+    },
+    "foodVendors": {
+      "title": "Restaurateurs",
+      "description": "Découvrez la cuisine de rue vietnamienne authentique des restaurateurs locaux au Festival Việt Montréal — ou postulez pour devenir restaurateur."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Réponses aux questions fréquentes sur le Festival Việt Montréal : dates, entrée gratuite, activités familiales, bénévolat, stationnement et plus."
+    },
+    "partners": {
+      "title": "Partenaires",
+      "description": "Découvrez les commanditaires, partenaires et bénévoles qui rendent le Festival Việt Montréal possible."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Communiquez avec l'équipe du Festival Việt Montréal pour toute question générale, demande média, candidature de restaurateur ou commandite."
+    }
+  },
   "nav": {
     "home": "Accueil",
     "performers": "Artistes",

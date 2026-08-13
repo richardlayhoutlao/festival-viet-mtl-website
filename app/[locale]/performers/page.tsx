@@ -1,4 +1,7 @@
 import { useTranslations } from "next-intl"
+import { createPageMetadata } from "@/lib/seo"
+
+export const generateMetadata = createPageMetadata("/performers")
 
 // Emoji tiles stand in until each performer has a real photo — swap the emoji
 // for an <Image> per card when the assets arrive.

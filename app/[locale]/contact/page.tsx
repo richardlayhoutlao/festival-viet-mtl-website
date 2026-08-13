@@ -2,6 +2,9 @@ import type { SVGProps } from "react"
 import { useTranslations } from "next-intl"
 import { Mail } from "lucide-react"
 import { EMAIL, FACEBOOK_URL, INSTAGRAM_URL } from "@/lib/site"
+import { createPageMetadata } from "@/lib/seo"
+
+export const generateMetadata = createPageMetadata("/contact")
 
 // lucide-react v1 dropped its brand icons, so the two social marks are inlined.
 // They carry lucide's own geometry and stroke settings on purpose — a filled
